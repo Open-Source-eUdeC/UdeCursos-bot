@@ -29,7 +29,7 @@ with open('data.json', 'r') as file:
 updater = Updater(token=data["token"], use_context=True)
 job_queue = updater.job_queue
 
-# UdeCursos.study 🔗
+
 def start(update, context):
     update.message.reply_text(
         "👋 ¡Hey, aquí UdeCursos Bot!\n\n"
@@ -86,6 +86,7 @@ def help(update, context):
         """💻 *Comandos disponibles* 💻
 
 • _/certs <rango> <ramoI, ramoII ...>_
+• _/get - Inspirational study quotes_
 • _/udecursos - Lista de comandos disponibles_
 • _/version - Versión del bot y código fuente_
     """, parse_mode='Markdown')
