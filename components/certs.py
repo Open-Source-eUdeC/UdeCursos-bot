@@ -75,7 +75,7 @@ def getSubjects(update, context):
             ramos.append(j.lower())
             pass
 
-    chat_id = update.message.chat_id
+    chat_id = str(update.message.chat_id)
     groupsIDs = fetchToken()['groupsIDs']
     if chat_id not in groupsIDs:
         update.message.reply_text(
