@@ -1,5 +1,7 @@
 from datetime import datetime
+from fetch import fetchToken
 import json
+
 
 def getRemainingDays(subject):
     currentDate = datetime.now().strftime("%Y-%m-%d")
@@ -73,8 +75,19 @@ def getSubjects(update, context):
             ramos.append(j.lower())
             pass
 
+    chat_id = update.message.chat_id
+    groupsIDs = fetchToken()['groupsIDs']
+    if chat_id not in groupsIDs:
+        update.message.reply_text(
+            "🙁 ¡Oops! No puedo enviarte las asignaturas.\n"
+            "Consulta a un administrador para agregar tu grupo de Telegram.",
+            parse_mode='Markdown'
+        )
+        return
+    gen = groupsIDs[0] if chat_id == groupsIDs[1] else groupsIDs[1]
+
     subjectsList = []
-    for subject in data:
+    for subject in data[gen]:
         if getRemainingDays(subject) > rango:
             continue
         if ramos:
