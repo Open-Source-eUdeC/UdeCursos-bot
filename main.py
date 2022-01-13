@@ -7,6 +7,7 @@ import json
 import logging
 from random import randint
 
+from components.fetch import *
 from components.certs import *
 from components.goodread import *
 from components.formatting import Clip
@@ -18,13 +19,10 @@ logging.basicConfig(
 )
 
 logger = logging.getLogger(__name__)
-
 clippings = Clip()
-
-with open('data.json', 'r') as file:
-    get = json.load(file)
-    token = get['token']
-    groupsIDs = get['groupsIDs']
+get = fetchToken()
+token = get['token']
+groupIDs = get['groupIDs']
 
 updater = Updater(token=data["token"], use_context=True)
 job_queue = updater.job_queue
@@ -60,8 +58,7 @@ def get(update, context):
     if len(source) < 3:
         source = clippings[seed]['author']
 
-    # Print the chat id of the group that asked for the quote
-    print(f'\n[ * ] Chat ID: {update.message.chat_id}')
+    # print(f'\n[ * ] Chat ID: {update.message.chat_id}')
     update.message.reply_text(
         # chat_id=update.effective_chat.id,
         text = f'_"{highlight}"_\n- *{source}*',
@@ -80,7 +77,11 @@ def version(update, context):
 def greetThursday(context):
     with open('assets/jueves.gif', 'rb') as file:
         animated = file.read()
-    context.bot.send_animation(groupsIDs[0], animated)
+    for group in groupIDs:
+        context.bot.send_animation(
+            chat_id=group,
+            animation=animated
+        )
 
 
 def help(update, context):
