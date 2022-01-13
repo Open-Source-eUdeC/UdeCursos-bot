@@ -22,7 +22,7 @@ logger = logging.getLogger(__name__)
 clippings = Clip()
 get = fetchToken()
 token = get['token']
-groupIDs = get['groupIDs']
+groupIDs = get['groupsIDs']
 
 updater = Updater(token=data["token"], use_context=True)
 job_queue = updater.job_queue

@@ -1,5 +1,5 @@
 from datetime import datetime
-from fetch import fetchToken
+from components.fetch import fetchToken
 import json
 
 
