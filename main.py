@@ -3,7 +3,6 @@ from telegram.ext import (
     CommandHandler
 )
 
-import json
 import logging
 from random import randint
 
@@ -68,7 +67,7 @@ def get(update, context):
 def version(update, context):
     sourceCode = "https://github.com/Open-Source-eUdeC/UdeCursos-bot"
     update.message.reply_text(
-        "<b>UdeCursos-bot v1.0\n</b>"
+        "<b>UdeCursos-bot v1.2\n</b>"
         f"<b>Código fuente: </b><a href='{sourceCode}'>GitHub</a>"
     , parse_mode="HTML")
 
@@ -85,7 +84,7 @@ def greetThursday(context):
 
 def help(update, context):
     update.message.reply_text(
-        """💻 *Comandos disponibles* 💻
+        """> *Comandos disponibles* <
 
 • _/certs <rango> <ramoI, ramoII ...>_
 • _/get - Inspirational study quotes_
