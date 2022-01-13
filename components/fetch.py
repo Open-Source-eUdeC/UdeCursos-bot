@@ -6,4 +6,3 @@ def fetchToken():
     return get
 
 # Develop fetch quotes for get() 
-print(fetchToken()['groupsIDs'])

@@ -1,10 +1,8 @@
 {
     "gen2022": [
-        { "name": "Testing", "date": "2022-01-22" },
-        { "name": "lololol", "date": "2022-01-18" }
+        { "name": "Testing", "date": "2022-01-10" }
     ],
     "gen2021": [
-        { "name": "Testing", "date": "2022-01-14" },
-        { "name": "lalalal", "date": "2022-01-15" }
+        { "name": "Testing", "date": "2022-01-10" }
     ]
 }
