@@ -60,6 +60,8 @@ def get(update, context):
     if len(source) < 3:
         source = clippings[seed]['author']
 
+    # Print the chat id of the group that asked for the quote
+    print(f'\n[ * ] Chat ID: {update.message.chat_id}')
     update.message.reply_text(
         # chat_id=update.effective_chat.id,
         text = f'_"{highlight}"_\n- *{source}*',
