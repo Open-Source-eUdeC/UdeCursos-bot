@@ -67,7 +67,7 @@ def get(update, context):
 def version(update, context):
     sourceCode = "https://github.com/Open-Source-eUdeC/UdeCursos-bot"
     update.message.reply_text(
-        "<b>UdeCursos-bot v1.2\n</b>"
+        "<b>UdeCursos-bot v1.5\n</b>"
         f"<b>Código fuente: </b><a href='{sourceCode}'>GitHub</a>"
     , parse_mode="HTML")
 
@@ -86,7 +86,7 @@ def help(update, context):
     update.message.reply_text(
         """> *Comandos disponibles* <
 
-• _/certs <rango> <ramoI, ramoII ...>_
+• _/certs Próximos certámenes/eventos_
 • _/get - Inspirational study quotes_
 • _/udecursos - Lista de comandos disponibles_
 • _/version - Versión del bot y código fuente_

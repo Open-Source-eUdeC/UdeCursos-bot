@@ -16,10 +16,10 @@ def getSubjects(update, context):
 
     alertMsg = """
 ⚠️ ¡Asegúrate de seguir el formato!
-      _/pruebas <rango> <ramoI, ramoII ...>_
+      _/certs <rango> <ramoI, ramoII ...>_
 """
     noneMsg = """
-🙁 ¡Oops! No poseo asignaturas llamadas así.
+🙁 ¡Oops! No poseo asignaturas o eventos llamados así.
 """
     try:
         if context.args[0] == 'help':
@@ -80,7 +80,7 @@ def getSubjects(update, context):
     if chat_id not in groupsIDs:
         update.message.reply_text(
             "🙁 ¡Oops! No puedo enviarte las asignaturas.\n"
-            "Consulta a un administrador para agregar tu grupo de Telegram.",
+            "Consulta a un administrador para registrar tu grupo de Telegram.",
             parse_mode='Markdown'
         )
         return
@@ -104,7 +104,7 @@ def getSubjects(update, context):
         subjectsList.sort(key=lambda x: int(x.split(' ')[0]))
 
     body = f"""
-    ✳️ *Próximos certámenes* ✳️
+    ✳️ *Próximos eventos/certámenes* ✳️
 ~ Rango: {rango} días
 
 """
