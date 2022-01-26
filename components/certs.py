@@ -76,6 +76,7 @@ def getSubjects(update, context):
             pass
 
     chat_id = str(update.message.chat_id)
+    print(chat_id)
     groupsIDs = fetchToken()['groupsIDs']
     if chat_id not in groupsIDs:
         update.message.reply_text(
