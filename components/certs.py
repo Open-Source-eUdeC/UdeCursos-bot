@@ -85,7 +85,7 @@ def getSubjects(update, context):
             parse_mode='Markdown'
         )
         return
-    gen = 'gen2021' if chat_id == groupsIDs[0] else 'gen2022'
+    gen = 'gen2021' if (chat_id == groupsIDs[0] or chat_id == groupsIDs[-1]) else 'gen2022'
 
     subjectsList = []
     for subject in data[gen]:
