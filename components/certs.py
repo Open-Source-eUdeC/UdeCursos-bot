@@ -100,7 +100,7 @@ def getSubjects(update, context):
                 continue
         else:
             print("[ ! ] Event mode: Subject not found")
-            subjectsList.append(f"{getRemainingDays(subject)} días - {subject['name']}")
+            subjectsList.append(f"{getRemainingDays(subject)} días:\n{subject['name']}\n")
     if subjectsList == []:
         update.message.reply_text(noneMsg)
         return
