@@ -76,7 +76,7 @@ def getSubjects(update, context):
             pass
 
     chat_id = str(update.message.chat_id)
-    print(chat_id)
+    # print(chat_id)
     groupsIDs = fetchToken()['groupsIDs']
     if chat_id not in groupsIDs:
         update.message.reply_text(
@@ -98,11 +98,11 @@ def getSubjects(update, context):
                 continue
         else:
             subjectsList.append(f"{getRemainingDays(subject)} días - {subject['name']}")
-    if subjectsList == []:
-        update.message.reply_text(noneMsg)
-        return
-    else:
-        subjectsList.sort(key=lambda x: int(x.split(' ')[0]))
+    # if subjectsList == []:
+    #     update.message.reply_text(noneMsg)
+    #     return
+    # else:
+    #     subjectsList.sort(key=lambda x: int(x.split(' ')[0]))
 
     body = f"""
     ✳️ *Próximos eventos/certámenes* ✳️
