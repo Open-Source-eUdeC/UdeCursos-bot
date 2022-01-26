@@ -26,6 +26,7 @@ def getSubjects(update, context):
             update.message.reply_text(alertMsg, parse_mode='Markdown')
             return
     except IndexError:
+        print('[ ! ] No subjects provided')
         pass
 
     try:
@@ -85,8 +86,8 @@ def getSubjects(update, context):
             parse_mode='Markdown'
         )
         return
-    gen = 'gen2021' if (chat_id == groupsIDs[0] or chat_id == groupsIDs[-1]) else 'gen2022'
 
+    gen = 'gen2021' if (chat_id == groupsIDs[0] or chat_id == groupsIDs[-1]) else 'gen2022'
     subjectsList = []
     for subject in data[gen]:
         if getRemainingDays(subject) > rango:
@@ -95,17 +96,19 @@ def getSubjects(update, context):
             if subject['name'].lower() in ramos:
                 subjectsList.append(f"{getRemainingDays(subject)} días - {subject['name']}")
             else:
-                continue
+                print("[ ! ] Event mode: Subject not found")
+                subjectsList.append(f"{getRemainingDays(subject)} días - {subject['name']}")
+
         else:
             subjectsList.append(f"{getRemainingDays(subject)} días - {subject['name']}")
-    # if subjectsList == []:
-    #     update.message.reply_text(noneMsg)
-    #     return
-    # else:
-    #     subjectsList.sort(key=lambda x: int(x.split(' ')[0]))
+    if subjectsList == []:
+        update.message.reply_text(noneMsg)
+        return
+    else:
+        subjectsList.sort(key=lambda x: int(x.split(' ')[0]))
 
     body = f"""
-    ✳️ *Próximos eventos/certámenes* ✳️
+    ✳️ *Próximos eventos* ✳️
 ~ Rango: {rango} días
 
 """
