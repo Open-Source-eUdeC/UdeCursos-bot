@@ -57,6 +57,9 @@ def get(update, context):
     if len(source) < 3:
         source = clippings[seed]['author']
 
+    # Print the id of the chat
+    print(update.effective_chat.id)
+
     update.message.reply_text(
         # chat_id=update.effective_chat.id,
         text = f'_"{highlight}"_\n- *{source}*',
