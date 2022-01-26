@@ -19,7 +19,7 @@ def getSubjects(update, context):
       _/certs <rango> <ramoI, ramoII ...>_
 """
     noneMsg = """
-🙁 ¡Oops! No poseo asignaturas o eventos llamados así.
+🙁 ¡Oops! No poseo asignaturas o eventos así hasta la fecha.
 """
     try:
         if context.args[0] == 'help':
@@ -34,7 +34,7 @@ def getSubjects(update, context):
         if rango > 120:
             rango = 120
     except (IndexError, ValueError):
-        rango = 31
+        rango = 60
 
     try:
         if not (context.args[0].isdigit()):
@@ -97,10 +97,9 @@ def getSubjects(update, context):
             if subject['name'].lower() in ramos:
                 subjectsList.append(f"{getRemainingDays(subject)} días - {subject['name']}")
             else:
-                print("[ ! ] Event mode: Subject not found")
-                subjectsList.append(f"{getRemainingDays(subject)} días - {subject['name']}")
-
+                continue
         else:
+            print("[ ! ] Event mode: Subject not found")
             subjectsList.append(f"{getRemainingDays(subject)} días - {subject['name']}")
     if subjectsList == []:
         update.message.reply_text(noneMsg)
