@@ -51,6 +51,7 @@ def getSubjects(update, context):
         
 
     except IndexError:
+        print('[ ! ] Ramos raw now is empty: IndexError with context.args')
         ramosRaw = []
     
     ramos = []
