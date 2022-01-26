@@ -1,8 +1,12 @@
 {
     "gen2022": [
-        { "name": "Testing", "date": "2022-01-10" }
+        { "name": "Inicio de Clases 2022", "date": "2022-03-14" },
+        { "name": "Inscripción de ramos", "date": "2022-03-07" },
+        { "name": "Comienzo de actividades UdeC", "date": "2022-02-28" }
     ],
     "gen2021": [
-        { "name": "Testing", "date": "2022-01-10" }
+        { "name": "Inicio de Clases 2022", "date": "2022-03-14" },
+        { "name": "Inscripción de ramos", "date": "2022-03-07" },
+        { "name": "Comienzo de actividades UdeC", "date": "2022-02-28" }
     ]
 }
