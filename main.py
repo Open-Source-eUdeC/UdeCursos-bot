@@ -1,5 +1,5 @@
 from telegram.ext import (
-    Updater, 
+    Updater,
     CommandHandler
 )
 
@@ -13,7 +13,7 @@ from components.formatting import Clip
 
 INPUT_TEXT = 0
 logging.basicConfig(
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', 
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO
 )
 
@@ -72,6 +72,12 @@ def version(update, context):
     , parse_mode="HTML")
 
 
+def add_cert(update, context):
+    # print()
+    pass
+
+
+
 def greetThursday(context):
     with open('assets/jueves.gif', 'rb') as file:
         animated = file.read()
@@ -92,18 +98,20 @@ def help(update, context):
 • _/version - Versión del bot y código fuente_
     """, parse_mode='Markdown')
 
+
 def main():
     dp = updater.dispatcher
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(CommandHandler('udecursos', help))
     dp.add_handler(CommandHandler('version', version))
     dp.add_handler(CommandHandler('certs', getSubjects, pass_args=True))
+	# dp.add_handler(CommandHandler('schedule', add_cert))
 
     dp.add_handler(CommandHandler('get', get))
     job_queue = updater.job_queue
     job_queue.run_daily(
-        greetThursday, 
-        time=dt.replace(hour=8, minute=0, second=0, microsecond=0), 
+        greetThursday,
+        time=dt.replace(hour=8, minute=0, second=0, microsecond=0),
         days=(3, ),
         name='Felíz Jueves'
     )
