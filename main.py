@@ -1,15 +1,18 @@
 from telegram.ext import (
     Updater,
-    CommandHandler
+    CommandHandler,
+    StringCommandHandler
 )
 
 import logging
+import json
 from random import randint
 
 from components.fetch import *
 from components.certs import *
 from components.goodread import *
 from components.formatting import Clip
+from components.modify_data import user_can_modify_data
 
 INPUT_TEXT = 0
 logging.basicConfig(
@@ -73,8 +76,17 @@ def version(update, context):
 
 
 def add_cert(update, context):
-    # print()
-    pass
+    # print(update.edited_message.chat.id)
+    msg = update.message.text
+    print(update.message)
+    usr_id = update.message.from_user.id
+    # usr_id = getattr(update.message, '"from"')
+    # filter(lambda a: not a.startswith('__'), dir(obj))
+    chat_id = update.message.chat.id
+    print("usr:", usr_id)
+    print("chat:", chat_id)
+    user_can_modify_data(chat_id, usr_id)
+
 
 
 
@@ -105,7 +117,7 @@ def main():
     dp.add_handler(CommandHandler('udecursos', help))
     dp.add_handler(CommandHandler('version', version))
     dp.add_handler(CommandHandler('certs', getSubjects, pass_args=True))
-	# dp.add_handler(CommandHandler('schedule', add_cert))
+    dp.add_handler(CommandHandler('schedule', add_cert))
 
     dp.add_handler(CommandHandler('get', get))
     job_queue = updater.job_queue

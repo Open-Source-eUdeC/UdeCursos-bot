@@ -9,6 +9,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 data.json
+token.json
 build/
 develop-eggs/
 dist/

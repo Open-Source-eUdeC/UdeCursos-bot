@@ -1,7 +1,7 @@
 import json
 
 def fetchToken():
-    with open('data.json', 'r') as file:
+    with open('token.json', 'r') as file:
         get = json.load(file)
     return get
 
