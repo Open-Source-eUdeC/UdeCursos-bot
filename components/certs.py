@@ -48,12 +48,12 @@ def getSubjects(update, context):
         else:
             update.message.reply_text(alertMsg)
             return
-        
+
 
     except IndexError:
         print('[ ! ] Ramos raw now is empty: IndexError with context.args')
         ramosRaw = []
-    
+
     ramos = []
     for j in ramosRaw:
         try:
@@ -90,7 +90,7 @@ def getSubjects(update, context):
 
     gen = 'gen2021' if (chat_id == groupsIDs[0] or chat_id == groupsIDs[-1]) else 'gen2022'
     subjectsList = []
-    for subject in data[gen]:
+    for subject in data[gen]['certs']:
         if getRemainingDays(subject) > rango:
             continue
         if ramos:
@@ -133,6 +133,6 @@ def getSubjects(update, context):
 
 
     update.message.reply_text(
-        body, 
+        body,
         parse_mode='Markdown'
     )
