@@ -1,9 +1,11 @@
+from re import A
 from telegram.ext import (
     Updater,
     CommandHandler,
     StringCommandHandler
 )
 
+import os
 import logging
 import json
 from random import randint
@@ -26,7 +28,7 @@ get = fetchToken()
 token = get['token']
 groupIDs = get['groupsIDs']
 
-updater = Updater(token=data["token"], use_context=True)
+updater = Updater(token=fetchToken()['token'], use_context=True)
 job_queue = updater.job_queue
 
 
@@ -78,15 +80,25 @@ def version(update, context):
 def add_cert(update, context):
     # print(update.edited_message.chat.id)
     msg = update.message.text
-    print(update.message)
     usr_id = update.message.from_user.id
-    # usr_id = getattr(update.message, '"from"')
-    # filter(lambda a: not a.startswith('__'), dir(obj))
     chat_id = update.message.chat.id
-    print("usr:", usr_id)
-    print("chat:", chat_id)
-    user_can_modify_data(chat_id, usr_id)
-
+    if user_can_modify_data(usr_id, chat_id):
+        # update.message.reply_text("Tienes permisos para alterar los datos")
+        gen = get_generation(chat_id)
+        args = msg.split()[1:]
+        cmd = "bin/insert_cert "
+        cmd += gen
+        for i in range(len(args)):
+            cmd += " "+args[i]
+        try:
+            os.system(cmd)
+        except:
+            print("An error has occured while executing modifying the data :/")
+            exit(1)
+    else :
+        update.message.reply_text(
+            "Al parecer no tienes permisos para alterar los datos ¯\_(ツ)_/¯"
+        )
 
 
 

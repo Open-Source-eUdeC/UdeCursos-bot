@@ -10,9 +10,9 @@ from random import randint
 tz = pytz.timezone('America/Santiago')
 dt = datetime.now(tz)
 
-with open('token.json', 'r') as file:
-    data = json.load(file)
-    print(data)
+# with open('token.json', 'r') as file:
+#     data = json.load(file)
+#     print(data)
 
 
 def push(highlight, verified):
