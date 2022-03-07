@@ -1,12 +1,12 @@
 import json
 
 def fetchToken():
-    with open('token.json', 'r') as file:
+    with open('sensitive.json', 'r') as file:
         get = json.load(file)
-    return get
+    return get['token']
 
 def fetch_groups_IDs():
-    with open('token.json', 'r') as file:
+    with open('sensitive.json', 'r') as file:
         data = json.load(file)
     return data['groupsIDs']
 

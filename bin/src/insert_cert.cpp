@@ -41,7 +41,7 @@ bool isSubstringOf(string sub, string whole) {
 int main(int argc, char *argv[]) { // ./bin/insert_cert gen2020 Calculo III 2020-09-23
 	string line;
 	bool genMatches = false;
-	bool insert = false;
+	bool next = false;
 	vector<string> args(argv, argv+argc);
 	string altered_file = "";
 	bool altered = false;
@@ -54,20 +54,26 @@ int main(int argc, char *argv[]) { // ./bin/insert_cert gen2020 Calculo III 2020
 	line_to_insert.pop_back(); // deletes the last space
 	line_to_insert += "&, &date&: &";
 	line_to_insert += args[args.size()-1];
-	line_to_insert += "& },\n";
+	line_to_insert += "& }";
 	line_to_insert = replaceQuotes(line_to_insert);
 
 	fstream file(file_location, ios::in); //Runs through the file to find out where it should insert the line
 	if (file.is_open()) {
 		while (getline (file, line)) {
+			if (next) {	// Reviews if should write the comma, cause the finish of the json attribute
+				if (isSubstringOf("name", line)) line_to_insert += ",";
+				line_to_insert += "\n";
+				altered_file += line_to_insert;
+				next = false;
+			}
 			altered_file += line + "\n";
 			if (isSubstringOf(args[1], line) && !altered) { // finds rigth gen
 				genMatches = true;
 			}
 			if (genMatches && !altered) {
 				if (isSubstringOf("certs", line)) { // Looks for "certs": {
-					altered_file += line_to_insert;
 					altered = true;
+					next = true;
 				}
 			}
 		}

@@ -14,7 +14,7 @@ from components.fetch import *
 from components.certs import *
 from components.goodread import *
 from components.formatting import Clip
-from components.modify_data import user_can_modify_data
+from components.modify_data import *
 
 INPUT_TEXT = 0
 logging.basicConfig(
@@ -24,11 +24,11 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 clippings = Clip()
-get = fetchToken()
-token = get['token']
-groupIDs = get['groupsIDs']
+# get = fetchToken()
+token = fetchToken()
+groupIDs = fetch_groups_IDs()
 
-updater = Updater(token=fetchToken()['token'], use_context=True)
+updater = Updater(token=fetchToken(), use_context=True)
 job_queue = updater.job_queue
 
 
@@ -78,14 +78,16 @@ def version(update, context):
 
 
 def add_cert(update, context):
-    # print(update.edited_message.chat.id)
     msg = update.message.text
     usr_id = update.message.from_user.id
     chat_id = update.message.chat.id
-    if user_can_modify_data(usr_id, chat_id):
-        # update.message.reply_text("Tienes permisos para alterar los datos")
+    if user_can_modify_data(usr_id, chat_id): # User belongs to gen.superusers
         gen = get_generation(chat_id)
         args = msg.split()[1:]
+        if not args_are_ok(args, "add_cert"):
+            update.message.reply_text("Revisa el formato del comando con /udecursos")
+            return
+
         cmd = "bin/insert_cert "
         cmd += gen
         for i in range(len(args)):
@@ -93,11 +95,12 @@ def add_cert(update, context):
         try:
             os.system(cmd)
         except:
-            print("An error has occured while executing modifying the data :/")
+            print("An error has occured while modifying the data :/")
             exit(1)
     else :
         update.message.reply_text(
             "Al parecer no tienes permisos para alterar los datos ¯\_(ツ)_/¯"
+            "contáctate con @CxrlosKenobi"
         )
 
 
@@ -120,6 +123,8 @@ def help(update, context):
 • _/get - Inspirational study quotes_
 • _/udecursos - Lista de comandos disponibles_
 • _/version - Versión del bot y código fuente_
+• _/schedule <nombre> <fecha> - Añade un nuevo evento_
+ Ej:  _/schedule Cálculo III 2022-03-30_
     """, parse_mode='Markdown')
 
 

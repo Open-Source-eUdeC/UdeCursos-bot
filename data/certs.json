@@ -18,11 +18,6 @@
   "testing": {
     "superusers": [1381022574],
     "certs": [
-      { "name": "Física II", "date": "2022-03-13" },
-      { "name": "Lenguaje Shinigami IV", "date": "2022-03-23" },
-      { "name": "This text has testing purposes", "date": "2022-03-15" },
-      { "name": "Inicio de Clases 2022", "date": "2022-03-14" },
-      { "name": "Inscripción de ramos", "date": "2022-03-07" }
     ]
   }
 }

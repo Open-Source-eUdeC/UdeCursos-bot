@@ -12,7 +12,7 @@ bin/insert_cert
 # Distribution / packaging
 .Python
 data.json
-token.json
+sensitive.json
 build/
 develop-eggs/
 dist/
