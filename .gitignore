@@ -6,9 +6,13 @@ __pycache__/
 # C extensions
 *.so
 
+# C/C++ Binaries
+bin/insert_cert
+
 # Distribution / packaging
 .Python
 data.json
+sensitive.json
 build/
 develop-eggs/
 dist/

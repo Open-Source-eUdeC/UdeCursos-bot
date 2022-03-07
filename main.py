@@ -1,29 +1,34 @@
+from re import A
 from telegram.ext import (
-    Updater, 
-    CommandHandler
+    Updater,
+    CommandHandler,
+    StringCommandHandler
 )
 
+import os
 import logging
+import json
 from random import randint
 
 from components.fetch import *
 from components.certs import *
 from components.goodread import *
 from components.formatting import Clip
+from components.modify_data import *
 
 INPUT_TEXT = 0
 logging.basicConfig(
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', 
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO
 )
 
 logger = logging.getLogger(__name__)
 clippings = Clip()
-get = fetchToken()
-token = get['token']
-groupIDs = get['groupsIDs']
+# get = fetchToken()
+token = fetchToken()
+groupIDs = fetch_groups_IDs()
 
-updater = Updater(token=data["token"], use_context=True)
+updater = Updater(token=fetchToken(), use_context=True)
 job_queue = updater.job_queue
 
 
@@ -72,6 +77,34 @@ def version(update, context):
     , parse_mode="HTML")
 
 
+def add_cert(update, context):
+    msg = update.message.text
+    usr_id = update.message.from_user.id
+    chat_id = update.message.chat.id
+    if user_can_modify_data(usr_id, chat_id): # User belongs to gen.superusers
+        gen = get_generation(chat_id)
+        args = msg.split()[1:]
+        if not args_are_ok(args, "add_cert"):
+            update.message.reply_text("Revisa el formato del comando con /udecursos")
+            return
+
+        cmd = "bin/insert_cert "
+        cmd += gen
+        for i in range(len(args)):
+            cmd += " "+args[i]
+        try:
+            os.system(cmd)
+        except:
+            print("An error has occured while modifying the data :/")
+            exit(1)
+    else :
+        update.message.reply_text(
+            "Al parecer no tienes permisos para alterar los datos ¯\_(ツ)_/¯"
+            "contáctate con @CxrlosKenobi"
+        )
+
+
+
 def greetThursday(context):
     with open('assets/jueves.gif', 'rb') as file:
         animated = file.read()
@@ -90,7 +123,10 @@ def help(update, context):
 • _/get - Inspirational study quotes_
 • _/udecursos - Lista de comandos disponibles_
 • _/version - Versión del bot y código fuente_
+• _/schedule <nombre> <fecha> - Añade un nuevo evento_
+ Ej:  _/schedule Cálculo III 2022-03-30_
     """, parse_mode='Markdown')
+
 
 def main():
     dp = updater.dispatcher
@@ -98,12 +134,13 @@ def main():
     dp.add_handler(CommandHandler('udecursos', help))
     dp.add_handler(CommandHandler('version', version))
     dp.add_handler(CommandHandler('certs', getSubjects, pass_args=True))
+    dp.add_handler(CommandHandler('schedule', add_cert))
 
     dp.add_handler(CommandHandler('get', get))
     job_queue = updater.job_queue
     job_queue.run_daily(
-        greetThursday, 
-        time=dt.replace(hour=8, minute=0, second=0, microsecond=0), 
+        greetThursday,
+        time=dt.replace(hour=8, minute=0, second=0, microsecond=0),
         days=(3, ),
         name='Felíz Jueves'
     )

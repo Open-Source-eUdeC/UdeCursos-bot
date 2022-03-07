@@ -10,8 +10,9 @@ from random import randint
 tz = pytz.timezone('America/Santiago')
 dt = datetime.now(tz)
 
-with open('data.json', 'r') as file:
-    data = json.load(file)
+# with open('token.json', 'r') as file:
+#     data = json.load(file)
+#     print(data)
 
 
 def push(highlight, verified):
@@ -55,7 +56,7 @@ def morningMode():
     name = 'Have a good read at morning!'
     days = (0, 1, 2, 3, 4, 5, 6)
     time = dt.replace(hour=h, minute=m, second=0, microsecond=0)
-    
+
     return time, days, name
 
 def noonMode():
@@ -64,7 +65,7 @@ def noonMode():
 
     name = 'Have a good read at noon!'
     days = (0, 1, 2, 3, 4, 5, 6)
-    time = dt.replace(hour=h, minute=m, second=00, microsecond=0)
+    time = dt.replace(hour=h, minute=m, second=0, microsecond=0)
 
     return time, days, name
 
