@@ -1,6 +1,7 @@
 from telegram import Chat
 import requests
 import json
+import os
 from components.fetch import *
 
 
@@ -33,3 +34,21 @@ def args_are_ok(args, command):
             return False
 
         return True
+
+    if command == "del_cert":
+        return True
+
+def add_cert(args, usr_id, chat_id, gen):
+    cmd = "bin/insert_cert "
+    cmd += gen
+    for i in range(len(args)):
+        cmd += " "+args[i]
+    try:
+        os.system(cmd)
+        return "Certamen añadido correctamente"
+    except:
+        print("An error has occured while modifying the data :/")
+        exit(1)
+
+def del_cert(args, usr_id, chat_id, gen):
+    pass

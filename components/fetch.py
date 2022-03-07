@@ -1,6 +1,6 @@
 import json
 
-def fetchToken():
+def fetch_token():
     with open('sensitive.json', 'r') as file:
         get = json.load(file)
     return get['token']
