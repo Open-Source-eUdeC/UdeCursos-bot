@@ -1,6 +1,6 @@
 {
   "gen2022": {
-    "superusers": [],
+    "superusers": [578309344],
     "certs" : [
       { "name": "Inicio de Clases 2022", "date": "2022-03-14" },
       { "name": "Inscripción de ramos", "date": "2022-03-07" },
@@ -8,7 +8,7 @@
     ]
   },
   "gen2021": {
-    "superusers": [],
+    "superusers": [1381022574, 578309344],
     "certs": [
       { "name": "Inicio de Clases 2022", "date": "2022-03-14" },
       { "name": "Inscripción de ramos", "date": "2022-03-07" },
@@ -16,8 +16,10 @@
     ]
   },
   "testing": {
-    "superusers": [1381022574],
+    "superusers": [1381022574, 578309344],
     "certs": [
+      { "name": "ProgComp Intermedio", "date": "2022-03-30" },
+      { "name": "Programación I", "date": "2022-03-29" }
     ]
   }
 }
