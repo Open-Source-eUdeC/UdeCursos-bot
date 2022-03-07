@@ -1,10 +1,11 @@
 from datetime import datetime
-from components.fetch import fetchToken
+from components.fetch import *
 import json
 
 
 def getRemainingDays(subject):
     currentDate = datetime.now().strftime("%Y-%m-%d")
+    print(subject)
     subjectDate = subject['date']
     remainingDays = (datetime.strptime(subjectDate, "%Y-%m-%d") - datetime.strptime(currentDate, "%Y-%m-%d")).days
 
@@ -48,12 +49,12 @@ def getSubjects(update, context):
         else:
             update.message.reply_text(alertMsg)
             return
-        
+
 
     except IndexError:
         print('[ ! ] Ramos raw now is empty: IndexError with context.args')
         ramosRaw = []
-    
+
     ramos = []
     for j in ramosRaw:
         try:
@@ -79,8 +80,10 @@ def getSubjects(update, context):
 
     chat_id = str(update.message.chat_id)
     # print(chat_id)
-    groupsIDs = fetchToken()['groupsIDs']
-    if chat_id not in groupsIDs:
+    gen = get_generation(chat_id)
+    # groupsIDs = fetch_groups_IDs()
+
+    if gen == None:
         update.message.reply_text(
             "🙁 ¡Oops! No puedo enviarte las asignaturas.\n"
             "Consulta a un administrador para registrar tu grupo de Telegram.",
@@ -88,9 +91,10 @@ def getSubjects(update, context):
         )
         return
 
-    gen = 'gen2021' if (chat_id == groupsIDs[0] or chat_id == groupsIDs[-1]) else 'gen2022'
+    # gen = 'gen2021' if (chat_id == groupsIDs[0] or chat_id == groupsIDs[-1]) else 'gen2022'
+
     subjectsList = []
-    for subject in data[gen]:
+    for subject in data[gen]['certs']:
         if getRemainingDays(subject) > rango:
             continue
         if ramos:
@@ -133,6 +137,6 @@ def getSubjects(update, context):
 
 
     update.message.reply_text(
-        body, 
+        body,
         parse_mode='Markdown'
     )
