@@ -18,6 +18,7 @@
   "testing": {
     "superusers": [1381022574, 578309344],
     "certs": [
+      { "name": "Calculo", "date": "2022-03-09" },
       { "name": "ProgComp Intermedio", "date": "2022-03-30" },
       { "name": "Programación I", "date": "2022-03-29" }
     ]

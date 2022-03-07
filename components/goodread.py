@@ -1,7 +1,4 @@
-from telegram import (
-    InlineKeyboardButton,
-    InlineKeyboardMarkup
-)
+from telegram import (InlineKeyboardButton, InlineKeyboardMarkup)
 from datetime import datetime
 import pytz
 import json
@@ -9,11 +6,6 @@ from random import randint
 
 tz = pytz.timezone('America/Santiago')
 dt = datetime.now(tz)
-
-# with open('token.json', 'r') as file:
-#     data = json.load(file)
-#     print(data)
-
 
 def push(highlight, verified):
     if verified is True:

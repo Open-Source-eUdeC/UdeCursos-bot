@@ -42,7 +42,7 @@ int main(int argc, char *argv[]) { // ./bin/insert_cert gen2020 Calculo III 2020
 	string line;
 	bool genMatches = false;
 	bool next = false;
-	vector<string> args(argv, argv+argc);
+	vector <string> args(argv, argv+argc);
 	string altered_file = "";
 	bool altered = false;
 	const string file_location = "data/certs.json";

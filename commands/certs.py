@@ -1,17 +1,18 @@
 from datetime import datetime
-from components.fetch import *
 import json
+#
+from components.fetch import get_generation
 
 
 def getRemainingDays(subject):
     currentDate = datetime.now().strftime("%Y-%m-%d")
-    print(subject)
     subjectDate = subject['date']
     remainingDays = (datetime.strptime(subjectDate, "%Y-%m-%d") - datetime.strptime(currentDate, "%Y-%m-%d")).days
 
     return remainingDays
 
-def getSubjects(update, context):
+
+def certs(update, context):
     with open('data/certs.json') as file:
         data = json.load(file)
 
@@ -79,7 +80,6 @@ def getSubjects(update, context):
             pass
 
     chat_id = str(update.message.chat_id)
-    # print(chat_id)
     gen = get_generation(chat_id)
     # groupsIDs = fetch_groups_IDs()
 
