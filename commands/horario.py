@@ -3,7 +3,7 @@ def horario(update, context):
         """ **Horario**
 
 ¡Hola! Tienes que hacer tu propio horario, la universidad solo provee los horarios y aulas de cada ramo. 
-No es tan complicado,  solo necesitas seguir la siguiente guía.
+No es tan complicado, solo necesitas seguir la siguiente guía.
 
 **[Como hacer tu propio horario](https://wiki.inf.udec.cl/doku.php?id=horario)**
 
