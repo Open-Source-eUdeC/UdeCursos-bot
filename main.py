@@ -13,7 +13,7 @@ from commands.version import version
 from commands.certs import certs
 from commands.get import get
 from commands.sched import sched
-from commands.sched import horario
+from commands.horario import horario
 from commands.Cronjobs import *
 
 
