@@ -1,6 +1,4 @@
 from telegram import Chat
-import requests
-import json
 import os
 from components.fetch import *
 
@@ -42,10 +40,10 @@ def add_cert(args, usr_id, chat_id, gen):
     cmd = "bin/insert_cert "
     cmd += gen
     for i in range(len(args)):
-        cmd += " "+args[i]
+        cmd += " " + args[i]
     try:
         os.system(cmd)
-        return "Certamen añadido correctamente"
+        return "🎉 ¡Evaluación añadida!"
     except:
         print("An error has occured while modifying the data :/")
         exit(1)
