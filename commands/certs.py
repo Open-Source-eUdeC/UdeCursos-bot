@@ -112,7 +112,7 @@ def certs(update, context):
         subjectsList.sort(key=lambda x: int(x.split(' ')[0]))
 
     body = f"""
-    ✳️ *Próximos eventos* ✳️
+    ✳️ *Próximas Evaluaciones* ✳️
 ~ Rango: {rango} días
 
 """
