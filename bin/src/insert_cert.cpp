@@ -48,12 +48,12 @@ int main(int argc, char *argv[]) { // ./bin/insert_cert gen2020 Calculo III 2020
 	const string file_location = "data/certs.json";
 
 	string line_to_insert = "      { &name&: &";
-	for (unsigned i=2;i<args.size()-1;++i) {
+	for (unsigned i=2; i < args.size()- 1; ++i) {
 		line_to_insert += args[i] + " ";
 	}
 	line_to_insert.pop_back(); // deletes the last space
 	line_to_insert += "&, &date&: &";
-	line_to_insert += args[args.size()-1];
+	line_to_insert += args[args.size()- 1];
 	line_to_insert += "& }";
 	line_to_insert = replaceQuotes(line_to_insert);
 
@@ -77,6 +77,7 @@ int main(int argc, char *argv[]) { // ./bin/insert_cert gen2020 Calculo III 2020
 				}
 			}
 		}
+		
 		altered_file.pop_back(); // Removes the final "\n"
 		file.close();
 		fstream file(file_location, ios::out); // Opens the file in write mode
