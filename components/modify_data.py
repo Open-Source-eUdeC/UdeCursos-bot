@@ -38,8 +38,9 @@ def args_are_ok(args, command):
 
 def add_cert(args, usr_id, chat_id, gen):
     cmd = "bin/insert_cert "
-    cmd += gen
-    for i in range(len(args)):
+    cmd += f"{gen} {args[0]}"
+
+    for i in range(1, len(args)):
         cmd += " " + args[i]
     try:
         os.system(cmd)

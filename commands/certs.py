@@ -104,7 +104,7 @@ def certs(update, context):
                 continue
         else:
             print("[ ! ] Event mode: Subject not found")
-            subjectsList.append(f"{getRemainingDays(subject)} días:\n{subject['name']}\n")
+            subjectsList.append(f"{getRemainingDays(subject)} días: ({subject['type']})\n{subject['name']}\n")
     if subjectsList == []:
         update.message.reply_text(noneMsg)
         return

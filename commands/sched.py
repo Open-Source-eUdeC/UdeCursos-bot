@@ -7,7 +7,7 @@ def sched(update, context):
     chat_id = update.message.chat.id
     
     if not user_can_modify_data(usr_id, chat_id): # User belongs to gen.superusers
-        update.message.reply_text("Al parecer no tienes permisos para alterar los datos ¯\_(ツ)_/¯\ncontáctate con @CxrlosKenobi")
+        update.message.reply_text("Al parecer no tienes permisos para alterar los datos ¯\_(ツ)_/¯\nContáctate con @CxrlosKenobi")
         return
 
     args = msg.split()[1:]
@@ -19,7 +19,11 @@ def sched(update, context):
         if not args_are_ok(args, "add_cert"):
             update.message.reply_text("Revisa el formato del comando con /udecursos")
             return
-        update.message.reply_text(add_cert(args, usr_id, chat_id, gen))
+
+        update.message.reply_text(
+            add_cert(args, usr_id, chat_id, gen),
+            parse_mode='Markdown'
+        )
         return
 
     if action == "del":

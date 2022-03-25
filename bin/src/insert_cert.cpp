@@ -66,8 +66,6 @@ int main(int argc, char *argv[]) { // ./bin/insert_cert gen2020 <Cert/Test> Calc
 	line_to_insert += "& }";
 	line_to_insert = replaceQuotes(line_to_insert);
 
-	printVector(args); // test
-	cout << line_to_insert << endl; // test
 
 	fstream file(file_location, ios::in); //Runs through the file to find out where it should insert the line
 	if (file.is_open()) {

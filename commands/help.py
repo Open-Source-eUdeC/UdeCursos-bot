@@ -7,8 +7,8 @@ def help(update, context):
 • _/udecursos - Lista de comandos disponibles_
 • _/version - Versión del bot y código fuente_
 • _/horario - Guía para crear un horario de clases_
-• _/schedule <acción> <nombre> [<fecha>] - Añade un nuevo evento_
+• _/sched <acción> <tipo> <nombre> [<fecha>] - Añade un nuevo evento_
     acciones: add
- Ej:  _/sched add Cálculo III 2022-03-30_
-      _/sched del Cálculo III_
+ Ej:  _/sched add Test Cálculo III 2022-03-30_
+      _/sched add Cert Álgebra I 2022-09-01_
     """, parse_mode='Markdown')
