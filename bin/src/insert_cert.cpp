@@ -54,7 +54,7 @@ int main(int argc, char *argv[]) { // ./bin/insert_cert gen2020 <Cert/Test> Calc
 	const string file_location = "data/certs.json";
 
 	string type = args[2];
-	string line_to_insert = "     { &type&: &";
+	string line_to_insert = "      { &type&: &";
 	line_to_insert += type + "&, ";
 	line_to_insert += "&name&: &";
 	for (unsigned i=3; i < args.size()- 1; ++i) {
