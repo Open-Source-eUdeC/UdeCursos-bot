@@ -37,8 +37,14 @@ bool isSubstringOf(string sub, string whole) {
 	}
 	return false;
 }
+void printVector(vector<string> vec) {
+	for (short i=0;i<vec.size();++i) {
+		cout << vec[i] << " ";
+	}
+	cout << endl;
+}
 
-int main(int argc, char *argv[]) { // ./bin/insert_cert gen2020 Calculo III 2020-09-23
+int main(int argc, char *argv[]) { // ./bin/insert_cert gen2020 <Cert/Test> Calculo III 2020-09-23
 	string line;
 	bool genMatches = false;
 	bool next = false;
@@ -47,8 +53,11 @@ int main(int argc, char *argv[]) { // ./bin/insert_cert gen2020 Calculo III 2020
 	bool altered = false;
 	const string file_location = "data/certs.json";
 
-	string line_to_insert = "      { &name&: &";
-	for (unsigned i=2; i < args.size()- 1; ++i) {
+	string type = args[2];
+	string line_to_insert = "     { &type&: &";
+	line_to_insert += type + "&, ";
+	line_to_insert += "&name&: &";
+	for (unsigned i=3; i < args.size()- 1; ++i) {
 		line_to_insert += args[i] + " ";
 	}
 	line_to_insert.pop_back(); // deletes the last space
@@ -56,6 +65,9 @@ int main(int argc, char *argv[]) { // ./bin/insert_cert gen2020 Calculo III 2020
 	line_to_insert += args[args.size()- 1];
 	line_to_insert += "& }";
 	line_to_insert = replaceQuotes(line_to_insert);
+
+	printVector(args); // test
+	cout << line_to_insert << endl; // test
 
 	fstream file(file_location, ios::in); //Runs through the file to find out where it should insert the line
 	if (file.is_open()) {
