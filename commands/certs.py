@@ -36,7 +36,7 @@ def certs(update, context):
         if rango > 120:
             rango = 120
     except (IndexError, ValueError):
-        rango = 60
+        rango = 40
 
     try:
         if not (context.args[0].isdigit()):
