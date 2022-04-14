@@ -17,7 +17,7 @@ def setAdmin(update, context):
   with open("data/certs.json", "r") as f:
     data = json.load(f)
   
-  data[gen]["superusers"].append(args[0])
+  data[gen]["superusers"].append(int(args[0]))
 
   with open("data/certs.json", "w") as f:
     # Write the new data, ordered and with proper indentation
