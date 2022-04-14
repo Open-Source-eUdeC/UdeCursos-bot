@@ -14,6 +14,7 @@ from commands.certs import certs
 from commands.get import get
 from commands.sched import sched
 from commands.horario import horario
+from commands.getid import getID
 from commands.Cronjobs import *
 
 
@@ -44,6 +45,7 @@ def main():
     dp.add_handler(CommandHandler('sched', sched))
     dp.add_handler(CommandHandler('get', get))
     dp.add_handler(CommandHandler('horario', horario))
+    dp.add_handler(CommandHandler('myid', getID))
 
     job_queue = updater.job_queue
     job_queue.run_daily(
