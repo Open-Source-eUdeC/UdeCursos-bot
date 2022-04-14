@@ -15,6 +15,7 @@ from commands.get import get
 from commands.sched import sched
 from commands.horario import horario
 from commands.getid import getID
+from commands.admin import setAdmin
 from commands.Cronjobs import *
 
 
@@ -46,6 +47,7 @@ def main():
     dp.add_handler(CommandHandler('get', get))
     dp.add_handler(CommandHandler('horario', horario))
     dp.add_handler(CommandHandler('myid', getID))
+    dp.add_handler(CommandHandler('set_admin', setAdmin))
 
     job_queue = updater.job_queue
     job_queue.run_daily(
