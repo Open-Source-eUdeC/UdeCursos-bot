@@ -23,5 +23,5 @@ def setAdmin(update, context):
     json.dump(data, f, sort_keys=True, indent=2)
   
   update.message.reply_text(
-    f"🎊 Usuario añadido exitosamente a la lista de superusuarios de la generación {gen}"
+    f"🎊 Usuario añadido a la lista de superusuarios de la generación {gen}"
   )
