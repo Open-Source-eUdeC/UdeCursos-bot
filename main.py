@@ -47,7 +47,7 @@ def main():
     dp.add_handler(CommandHandler('get', get))
     dp.add_handler(CommandHandler('horario', horario))
     dp.add_handler(CommandHandler('myid', getID))
-    dp.add_handler(CommandHandler('set_admin', setAdmin))
+    dp.add_handler(CommandHandler('setadmin', setAdmin))
 
     job_queue = updater.job_queue
     job_queue.run_daily(
