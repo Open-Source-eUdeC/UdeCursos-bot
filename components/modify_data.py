@@ -1,4 +1,3 @@
-from telegram import Chat
 import os
 from components.fetch import *
 
