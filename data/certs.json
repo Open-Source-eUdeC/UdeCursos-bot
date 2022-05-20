@@ -27,7 +27,7 @@
       { "type": "Cert", "name": "Álgebra II", "date": "2022-07-09" },
 
       { "type": "Cert", "name": "Programación I", "date": "2022-07-11" },
-      { "type": "Cert", "name": "Programación I", "date": "2022-05-02" },
+      { "type": "Cert", "name": "Programación I", "date": "2022-05-02" }
     ]
   },
   "testing": {
