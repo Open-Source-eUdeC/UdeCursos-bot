@@ -31,4 +31,9 @@ def get_certs_data():
         data = json.load(file)
     return data
 
+def getExams(chat_id, subject):
+    generation = get_generation(chat_id)
+    data = get_certs_data()[generation]['certs']
+    exams = [(e['type'], e['date']) for e in data if e['name'] == subject]
+    return None if not exams else exams
 # Develop fetch quotes for get() 
