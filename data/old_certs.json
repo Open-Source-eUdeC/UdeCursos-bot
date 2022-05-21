@@ -1,0 +1,40 @@
+{
+  "gen2022": {
+    "superusers": [578309344, 5324538848],
+    "certs" : [
+      { "type": "Test", "name": "Química General I", "date": "2022-05-27" },
+      { "type": "Test", "name": "Química General I", "date": "2022-06-24" },
+      { "type": "Test", "name": "Química General I", "date": "2022-04-08" },
+      { "type": "Cert", "name": "Química General I", "date": "2022-05-02" },
+      { "type": "Cert", "name": "Química General I", "date": "2022-07-05" }
+    ]
+  },
+  "gen2021": {
+    "superusers": [1381022574, 578309344, 5324538848],
+    "certs": [
+      { "type": "Test", "name": "Cálculo II", "date": "2022-04-15" },
+      { "type": "Cert", "name": "Cálculo II", "date": "2022-04-19" },
+      { "type": "Test", "name": "Cálculo II", "date": "2022-05-02" },
+      { "type": "Test", "name": "Cálculo II", "date": "2022-05-16" },
+      { "type": "Test", "name": "Cálculo II", "date": "2022-05-25" },
+      { "type": "Cert", "name": "Cálculo II", "date": "2022-05-31" },
+      { "type": "Test", "name": "Cálculo II", "date": "2022-05-25" },
+      { "type": "Test", "name": "Cálculo II", "date": "2022-06-27" },
+      { "type": "Cert", "name": "Cálculo II", "date": "2022-07-02" },
+
+      { "type": "Cert", "name": "Álgebra II", "date": "2022-04-22" },
+      { "type": "Cert", "name": "Álgebra II", "date": "2022-06-03" },
+      { "type": "Cert", "name": "Álgebra II", "date": "2022-07-09" },
+
+      { "type": "Cert", "name": "Programación I", "date": "2022-07-11" },
+      { "type": "Cert", "name": "Programación I", "date": "2022-05-02" }
+    ]
+  },
+  "testing": {
+    "superusers": [1381022574, 578309344, 5324538848],
+    "certs": [
+      { "type": "Test", "name": "Programación I", "date": "2022-03-31" },
+      { "type": "Cert", "name": "Deep Learning", "date": "2022-03-31" }
+    ]
+  }
+}
