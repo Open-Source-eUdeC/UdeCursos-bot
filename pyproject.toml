@@ -6,8 +6,8 @@ authors = ["CxrlosKenobi <kenobi@ieee.org>", "AlbFR <AlbFR@users.noreply.github.
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.10"
-python-telegram-bot = "^13.11"
+python = "^3.7"
+python-telegram-bot = "^20.0a0"
 
 [tool.poetry.dev-dependencies]
 
