@@ -48,6 +48,6 @@ poetry run python3 main.py
 
 #### Pendientes
 - [ ] Mejorar documentación
-- [ ] Optimizar mensajes entre usuario y bot en /add y /remove. (Que no ocupe tanto espacio en mensajes)
-- [ ] Automatizar agregar nuevos "subjects" a certs.json via algun comando
-- [ ] Agregar /udecursos y /help  
+- [ ] Optimizar mensajes entre usuario y bot en `/add` y `/remove`. (Que no ocupe tanto espacio en mensajes)
+- [ ] Automatizar agregar nuevos "subjects" a `certs.json` via algun comando
+- [ ] Agregar `/udecursos` y `/help` 
