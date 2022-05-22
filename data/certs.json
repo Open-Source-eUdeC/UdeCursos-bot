@@ -1,40 +1,85 @@
 {
-  "gen2022": {
-    "superusers": [578309344],
-    "certs" : [
-      { "type": "Test", "name": "Química General I", "date": "2022-05-27" },
-      { "type": "Test", "name": "Química General I", "date": "2022-06-24" },
-      { "type": "Test", "name": "Química General I", "date": "2022-04-08" },
-      { "type": "Cert", "name": "Química General I", "date": "2022-05-02" },
-      { "type": "Cert", "name": "Química General I", "date": "2022-07-05" }
-    ]
-  },
-  "gen2021": {
-    "superusers": [1381022574, 578309344],
-    "certs": [
-      { "type": "Test", "name": "Cálculo II", "date": "2022-04-15" },
-      { "type": "Cert", "name": "Cálculo II", "date": "2022-04-19" },
-      { "type": "Test", "name": "Cálculo II", "date": "2022-05-02" },
-      { "type": "Test", "name": "Cálculo II", "date": "2022-05-16" },
-      { "type": "Test", "name": "Cálculo II", "date": "2022-05-25" },
-      { "type": "Cert", "name": "Cálculo II", "date": "2022-05-31" },
-      { "type": "Test", "name": "Cálculo II", "date": "2022-05-25" },
-      { "type": "Test", "name": "Cálculo II", "date": "2022-06-27" },
-      { "type": "Cert", "name": "Cálculo II", "date": "2022-07-02" },
-
-      { "type": "Cert", "name": "Álgebra II", "date": "2022-04-22" },
-      { "type": "Cert", "name": "Álgebra II", "date": "2022-06-03" },
-      { "type": "Cert", "name": "Álgebra II", "date": "2022-07-09" },
-
-      { "type": "Cert", "name": "Programación I", "date": "2022-07-11" },
-      { "type": "Cert", "name": "Programación I", "date": "2022-05-02" },
-    ]
-  },
-  "testing": {
-    "superusers": [1381022574, 578309344],
-    "certs": [
-      { "type": "Test", "name": "Programación I", "date": "2022-03-31" },
-      { "type": "Cert", "name": "Deep Learning", "date": "2022-03-31" }
-    ]
-  }
+	"gen2021": {
+		"subjects": [
+			"Programación I",
+			"Lógica",
+			"EDO",
+			"Cálculo III",
+			"Cálculo II",
+			"Álgebra II"
+		],
+		"certs": [
+			{"date": "2022-05-09", "type": "Cert", "name": "Programación I"},
+			{"date": "2022-04-18", "type": "Tarea", "name": "Cálculo III"},
+			{"date": "2022-05-06", "type": "Cert", "name": "Cálculo III"},
+			{"date": "2022-05-04", "type": "Cert", "name": "EDO"},
+			{"date": "2022-04-25", "type": "Cert", "name": "Lógica"},
+			{"date": "2022-05-30", "type": "Cert", "name": "Lógica"},
+			{"date": "2022-06-27", "type": "Cert", "name": "Lógica"},
+			{"date": "2022-04-15", "type": "Test", "name": "Cálculo II"},
+			{"date": "2022-04-19", "type": "Cert", "name": "Cálculo II"},
+			{"date": "2022-05-02", "type": "Test", "name": "Cálculo II"},
+			{"date": "2022-05-16", "type": "Test", "name": "Cálculo II"},
+			{"date": "2022-05-25", "type": "Test", "name": "Cálculo II"},
+			{"date": "2022-05-31", "type": "Cert", "name": "Cálculo II"},
+			{"date": "2022-05-25", "type": "Test", "name": "Cálculo II"},
+			{"date": "2022-06-27", "type": "Test", "name": "Cálculo II"},
+			{"date": "2022-07-02", "type": "Cert", "name": "Cálculo II"},
+			{"date": "2022-04-22", "type": "Cert", "name": "Álgebra II"},
+			{"date": "2022-06-03", "type": "Cert", "name": "Álgebra II"},
+			{"date": "2022-07-09", "type": "Cert", "name": "Álgebra II"},
+			{"date": "2022-07-11", "type": "Cert", "name": "Programación I"},
+			{"date": "2022-05-02", "type": "Cert", "name": "Programación I"}
+		]
+	},
+	"gen2022": {
+		"subjects": [
+			"Cálculo I",
+			"Álgebra I",
+			"Física I",
+			"Química General I"
+		],
+		"certs": [
+			{"date": "2022-06-25", "type": "Test", "name": "Cálculo I"},
+			{"date": "2022-06-11", "type": "Test", "name": "Cálculo I"},
+			{"date": "2022-05-28", "type": "Test", "name": "Cálculo I"},
+			{"date": "2022-05-14", "type": "Test", "name": "Cálculo I"},
+			{"date": "2022-05-13", "type": "Test", "name": "Álgebra I"},
+			{"date": "2022-05-07", "type": "Test", "name": "Cálculo I"},
+			{"date": "2022-06-11", "type": "Test", "name": "Cálculo"},
+			{"date": "2022-06-07", "type": "Cert", "name": "Física"},
+			{"date": "2022-06-03", "type": "Cert", "name": "Algebra"},
+			{"date": "2022-05-31", "type": "Cert", "name": "Cálculo I"},
+			{"date": "2022-05-28", "type": "Test", "name": "Cálculo I"},
+			{"date": "2022-04-14", "type": "Test", "name": "Cálculo I"},
+			{"date": "2022-04-30", "type": "Test", "name": "Cálculo I"},
+			{"date": "2022-04-25", "type": "Cert", "name": "Física I"},
+			{"date": "2022-04-22", "type": "Cert", "name": "Álgebra I"},
+			{"date": "2022-04-19", "type": "Cert", "name": "Cálculo I"},
+			{"date": "2022-05-27", "type": "Test", "name": "Química General I"},
+			{"date": "2022-06-24", "type": "Test", "name": "Química General I"},
+			{"date": "2022-04-08", "type": "Test", "name": "Química General I"},
+			{"date": "2022-05-02", "type": "Cert", "name": "Química General I"},
+			{"date": "2022-07-05", "type": "Cert", "name": "Química General I"}
+		]
+	},
+	"testing": {
+		"subjects": [
+			"Linear Algebra",
+			"Quantum Mechanics",
+			"Deep Learning",
+			"Computer Vision",
+			"Machine Learning",
+			"Data Science",
+			"Artificial Intelligence",
+			"Cryptography",
+			"Quantum Computing"
+		],
+		"certs": [
+			{"date": "2022-05-30", "type": "Test", "name": "Quantum Computing"},
+			{"date": "2022-05-30", "type": "Cert", "name": "Keep moving forward!!! :')"},
+			{"date": "2022-05-28", "type": "Cert", "name": "Cryptography"},
+			{"date": "2022-06-10", "type": "Tarea", "name": "Data Science"}
+		]
+	}
 }
