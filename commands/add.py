@@ -106,6 +106,7 @@ async def cert_operation(update, context):
                 parse_mode='Markdown'
             ); return ConversationHandler.END
         else:
+            cert_adder(cert, gen)
             usr_id = update.message.from_user.id
             usr_name = update.message.from_user.first_name
             params = [new_cert['date'], new_cert['type'], new_cert['name']]
