@@ -1,7 +1,30 @@
-# UdeCursos-bot
-Bot de Telegram con automatizaciones que te hacen la carrera más fácil.
+
+<center>
+
+  # UdeCursos-bot
+  > @UdeCursosBot version: 2.0
 
 
+  Bot de Telegram con automatizaciones que te hacen la carrera más fácil.
+
+</center>
+
+---
+
+#### Visualiza la cuenta regresiva de tus próximas evaluaciones.
+<center>
+
+  ![certs](assets/certs.gif)
+
+</center>
+
+#### Cualquiera puede colaborar con las fechas de evaluaciones gracias a los cómodos botones de la interfaz.
+<center>
+  
+  ![add](assets/add.gif)
+  ![remove](assets/remove.gif)
+
+</center>
 
 ## Para desarrolladores
 
