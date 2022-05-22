@@ -3,17 +3,22 @@ import json
 #
 from components.dump import pretty_dump
 
+def cert_check(new_cert, gen):
+    with open('data/certs.json') as file:
+        data = json.load(file)
+    
+    if new_cert in data[gen]['certs']:
+        return True
+    else:
+        return False
+
 def cert_adder(new_cert, gen):
     with open('data/certs.json') as file:
         data = json.load(file)
     
-    # Check if subject exists
-    if new_cert not in data[gen]['subjects']:
-        data[gen]['certs'].append(new_cert)
-        pretty_dump(data)
-        return True
-    else:
-        return False
+    data[gen]['certs'].append(new_cert)
+    pretty_dump(data)
+    return True
 
 def cert_remover(chosen_cert, gen):
     with open('data/certs.json') as file:

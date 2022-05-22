@@ -4,7 +4,7 @@ from telegram.ext import ConversationHandler
 #
 from components.history import save_record
 from components.fetch import get_generation
-from components.certs import getSubjects, cert_adder
+from components.certs import getSubjects, cert_adder, cert_check
 from commands.remove import cancel
 
 
@@ -99,7 +99,7 @@ async def cert_operation(update, context):
         cert = {'date': new_cert['date'], 'type': new_cert['type'], 'name': new_cert['name']}
 
         # If cert_adder returns false it means that the subject already exists
-        if not cert_adder(cert, gen):
+        if cert_check(cert, gen):
             await update.message.reply_text(
                 """
                 🙁 *¡Esa fecha ya está registrada!*
