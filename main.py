@@ -35,7 +35,9 @@ dt = datetime.now(tz)
 if not os.path.exists('bin/insert_cert'):
     command = "g++ bin/src/insert_cert.cpp -o bin/insert_cert"
     subprocess.run(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-
+if not os.path.exists('bin/remove_cert'):
+    command = "g++ bin/src/remove_cert.cpp -o bin/remove_cert"
+    subprocess.run(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
 def main():
     dp = updater.dispatcher
