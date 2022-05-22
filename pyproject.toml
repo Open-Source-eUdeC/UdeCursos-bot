@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "UdeCursos Bot"
-version = "1.8"
+version = "2.0"
 description = ""
 authors = ["CxrlosKenobi <kenobi@ieee.org>", "AlbFR <AlbFR@users.noreply.github.com>"]
 license = "MIT"
