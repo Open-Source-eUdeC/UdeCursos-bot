@@ -1,18 +1,10 @@
-from datetime import datetime
 import json
 #
 from components.fetch import get_generation
+from components.certs import getRemainingDays
 
 
-def getRemainingDays(subject):
-    currentDate = datetime.now().strftime("%Y-%m-%d")
-    subjectDate = subject['date']
-    remainingDays = (datetime.strptime(subjectDate, "%Y-%m-%d") - datetime.strptime(currentDate, "%Y-%m-%d")).days
-
-    return remainingDays
-
-
-def certs(update, context):
+async def certs(update, context):
     with open('data/certs.json') as file:
         data = json.load(file)
 
@@ -25,19 +17,18 @@ def certs(update, context):
 """
     try:
         if context.args[0] == 'help':
-            update.message.reply_text(alertMsg, parse_mode='Markdown')
+            await update.message.reply_text(alertMsg, parse_mode='Markdown')
             return
     except IndexError:
-        print('[ ! ] No subjects provided')
+        print('[ ! ] No arguments were given')
         pass
 
     try:
         rango = int(context.args[0])
-        if rango > 120:
-            rango = 120
+        if rango > 120: rango = 120
     except (IndexError, ValueError):
-        rango = 40
-
+        rango = 45
+    
     try:
         if not (context.args[0].isdigit()):
             ramosRaw = context.args
@@ -48,14 +39,12 @@ def certs(update, context):
             elif len(context.args) == 1:
                 ramosRaw = []
         else:
-            update.message.reply_text(alertMsg)
+            await update.message.reply_text(alertMsg, parse_mode='Markdown')
             return
-
-
     except IndexError:
-        print('[ ! ] Ramos raw now is empty: IndexError with context.args')
+        print('[ ! ] No arguments were given')
         ramosRaw = []
-
+    
     ramos = []
     for j in ramosRaw:
         try:
@@ -81,18 +70,16 @@ def certs(update, context):
 
     chat_id = str(update.message.chat_id)
     gen = get_generation(chat_id)
-    # groupsIDs = fetch_groups_IDs()
 
     if gen == None:
-        update.message.reply_text(
-            "🙁 ¡Oops! No puedo enviarte las asignaturas.\n"
-            "Consulta a un administrador para registrar tu grupo de Telegram.",
+        await update.message.reply_text(
+            """
+            🙁 ¡No puedo obtener tu generación de la base de datos!
+            \nConsulta a un administrador para que realice el registro.
+            """,
             parse_mode='Markdown'
-        )
-        return
-
-    # gen = 'gen2021' if (chat_id == groupsIDs[0] or chat_id == groupsIDs[-1]) else 'gen2022'
-
+        ); return
+    
     subjectsList = []
     for subject in data[gen]['certs']:
         if getRemainingDays(subject) > rango:
@@ -103,13 +90,14 @@ def certs(update, context):
             else:
                 continue
         else:
-            print("[ ! ] Event mode: Subject not found")
-            subjectsList.append(f"{getRemainingDays(subject)} días: ({subject['type']})\n{subject['name']}\n")
+            subjectsList.append(f"{getRemainingDays(subject)} días ({subject['type']})\n{subject['name']}\n")
     if subjectsList == []:
-        update.message.reply_text(noneMsg)
+        await update.message.reply_text(noneMsg, parse_mode='Markdown')
         return
     else:
         subjectsList.sort(key=lambda x: int(x.split(' ')[0]))
+
+
 
     body = f"""
     ✳️ *Próximas Evaluaciones* ✳️
@@ -135,8 +123,4 @@ def certs(update, context):
 
         body += f"• {assignedStatus} _{subject}_\n"
 
-
-    update.message.reply_text(
-        body,
-        parse_mode='Markdown'
-    )
+    await update.message.reply_text(body, parse_mode='Markdown')
