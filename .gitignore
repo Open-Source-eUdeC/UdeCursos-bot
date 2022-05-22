@@ -9,6 +9,7 @@ __pycache__/
 
 # C/C++ Binaries
 bin/insert_cert
+bin/remove_cert
 
 # Distribution / packaging
 .Python
