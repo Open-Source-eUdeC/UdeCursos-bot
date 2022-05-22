@@ -31,6 +31,7 @@ async def add(update, context):
                 """,
                 parse_mode='Markdown'
             ); return ConversationHandler.END
+
     except Exception as e:
         print(e)
         await update.message.reply_text(
@@ -96,11 +97,20 @@ async def cert_operation(update, context):
     new_cert["type"] = update.message.text
     try:
         cert = {'date': new_cert['date'], 'type': new_cert['type'], 'name': new_cert['name']}
-        cert_adder(cert, gen)
-        usr_id = update.message.from_user.id
-        usr_name = update.message.from_user.first_name
-        params = [new_cert['date'], new_cert['type'], new_cert['name']]
-        save_record(gen, '/add', params, usr_name, usr_id)
+
+        # If cert_adder returns false it means that the subject already exists
+        if not cert_adder(cert, gen):
+            await update.message.reply_text(
+                """
+                🙁 *¡Esa fecha ya está registrada!*
+                """,
+                parse_mode='Markdown'
+            ); return ConversationHandler.END
+        else:
+            usr_id = update.message.from_user.id
+            usr_name = update.message.from_user.first_name
+            params = [new_cert['date'], new_cert['type'], new_cert['name']]
+            save_record(gen, '/add', params, usr_name, usr_id)
 
     except Exception as e:
       print(e)

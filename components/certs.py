@@ -7,10 +7,13 @@ def cert_adder(new_cert, gen):
     with open('data/certs.json') as file:
         data = json.load(file)
     
-    data[gen]['certs'].append(new_cert)
-    pretty_dump(data)
-
-    return True
+    # Check if subject exists
+    if new_cert not in data[gen]['subjects']:
+        data[gen]['certs'].append(new_cert)
+        pretty_dump(data)
+        return True
+    else:
+        return False
 
 def cert_remover(chosen_cert, gen):
     with open('data/certs.json') as file:
