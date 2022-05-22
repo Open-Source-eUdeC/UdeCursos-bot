@@ -98,11 +98,10 @@ async def cert_operation(update, context):
     try:
         cert = {'date': new_cert['date'], 'type': new_cert['type'], 'name': new_cert['name']}
 
-        # If cert_adder returns false it means that the subject already exists
         if cert_check(cert, gen):
             await update.message.reply_text(
                 """
-                🙁 *¡Esa fecha ya está registrada!*
+                🙁 *La evaluación que intentas agregar ya está registrada.*
                 """,
                 parse_mode='Markdown'
             ); return ConversationHandler.END
