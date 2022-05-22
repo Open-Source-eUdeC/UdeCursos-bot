@@ -1,0 +1,109 @@
+{
+  "gen2022": [],
+  "gen2021": [],
+  "testing": [
+    {
+      "date": "",
+      "action": "/remove",
+      "params": [],
+      "user": {
+        "id": 0,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-21",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-05-29",
+        "Test",
+        "Computer Vision"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-21",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-05-27",
+        "Cert",
+        "Linear Algebra"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-21",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-06-02",
+        "Cert",
+        "Artificial Intelligence"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-21",
+      "name": "Carlos",
+      "action": "/remove",
+      "params": [
+        "[Cert] Artificial Intelligence 2022-06-02"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-21",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-06-10",
+        "Tarea",
+        "Data Science"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-21",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-05-9",
+        "Test",
+        "Artificial Intelligence"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-21",
+      "name": "Carlos",
+      "action": "/remove",
+      "params": [
+        "[Test] Artificial Intelligence 2022-05-9"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    }
+  ]
+}
