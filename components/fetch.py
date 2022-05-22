@@ -25,10 +25,3 @@ def get_generation(chat_id):
         if chat_id == data[i][1]:
             return data[i][0]
     return None
-
-def get_certs_data():
-    with open('data/certs.json', 'r') as file:
-        data = json.load(file)
-    return data
-
-# Develop fetch quotes for get() 
