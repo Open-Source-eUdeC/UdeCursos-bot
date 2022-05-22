@@ -16,10 +16,9 @@
 
 <div align="center">
 
-  #### Visualiza la cuenta regresiva de tus próximas evaluaciones.
+  ### Visualiza la cuenta regresiva de tus próximas evaluaciones.
 
   ![certs](assets/certs.gif)
-
 
   ### Cualquiera puede colaborar con las fechas de evaluaciones gracias a los cómodos botones de la interfaz.
 
