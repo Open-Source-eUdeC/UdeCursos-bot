@@ -1,30 +1,35 @@
 
-<center>
+<div align="center">
 
   # UdeCursos-bot
-  > @UdeCursosBot version: 2.0
 
+  ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+  ![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)
+
+  > @UdeCursosBot version: 2.0
 
   Bot de Telegram con automatizaciones que te hacen la carrera más fácil.
 
-</center>
+</div>
 
 ---
 
-#### Visualiza la cuenta regresiva de tus próximas evaluaciones.
-<center>
+<div align="center">
+
+  #### Visualiza la cuenta regresiva de tus próximas evaluaciones.
 
   ![certs](assets/certs.gif)
 
-</center>
 
-#### Cualquiera puede colaborar con las fechas de evaluaciones gracias a los cómodos botones de la interfaz.
-<center>
-  
-  ![add](assets/add.gif)
-  ![remove](assets/remove.gif)
+  ### Cualquiera puede colaborar con las fechas de evaluaciones gracias a los cómodos botones de la interfaz.
 
-</center>
+  <div style="display: flex; justify-content: space-around;">
+    <img src="assets/add.gif" style="height: 80%; width: 80%; margin-right: 10px" />
+    <img src="assets/remove.gif" style="height: 80%; width: 80%; margin-left: 10px" />
+  </div>
+
+
+</div>
 
 ## Para desarrolladores
 
