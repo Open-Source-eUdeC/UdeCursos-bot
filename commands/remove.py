@@ -1,31 +1,21 @@
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove
 from telegram.ext import ConversationHandler
 #
-from components.modify_data import user_can_modify_data
 from components.fetch import get_generation
-from components.certs import getSubjectsList, subject_remover
+from components.history import save_record
+from components.certs import getCerts, cert_remover
 
-REMOVE_CERT, OPERATION = range(2)
+REMOVE_CONFIRM, REMOVE_CERT = range(2)
 chosen_cert = None
 gen = None
 
 async def remove(update, context):
-  usr_id = update.message.from_user.id
   chat_id = update.message.chat_id
   global gen
   gen = get_generation(chat_id)
 
-  if not user_can_modify_data(usr_id, chat_id):
-    await update.message.reply_text(
-        """
-        🚫 *¡No tienes permisos para modificar los datos!*
-        \nConsulta con un administrador para obtener permisos.            
-        """,
-        parse_mode='Markdown'
-    ); return
-
   reply_keyboard = []
-  for sub in getSubjectsList(update, gen):
+  for sub in getCerts(update, gen):
     reply_keyboard.append([f"[{sub['type']}] {sub['name']} {sub['date']}"])
 
   if len(reply_keyboard) == 0:
@@ -51,10 +41,10 @@ async def remove(update, context):
       )
   )
 
-  return REMOVE_CERT
+  return REMOVE_CONFIRM
 
 
-async def remove_cert(update, context):
+async def remove_confirm(update, context):
   global chosen_cert
   chosen_cert = update.message.text
 
@@ -77,15 +67,20 @@ async def remove_cert(update, context):
       )
   )
 
-  return OPERATION
+  return REMOVE_CERT
     
 
-async def operation(update, context):
+async def remove_cert(update, context):
   response = update.message.text
   
   if response == '👍':
     try:
-      subject_remover(chosen_cert, gen)
+      cert_remover(chosen_cert, gen)
+      usr_id = update.message.from_user.id
+      usr_name = update.message.from_user.first_name
+      params = [chosen_cert]
+      save_record(gen, '/remove', params, usr_name, usr_id)
+
     except Exception as e:
       print(e)
       await update.message.reply_text(
@@ -102,8 +97,7 @@ async def operation(update, context):
         """,
         parse_mode='Markdown',
         reply_markup=ReplyKeyboardRemove()
-    )
-    return ConversationHandler.END
+    ); return ConversationHandler.END
 
   elif response == '❌':
     await update.message.reply_text(

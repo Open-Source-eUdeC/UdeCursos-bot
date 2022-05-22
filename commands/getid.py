@@ -1,7 +1,15 @@
-def getID(update, context):
+async def getID(update, context):
   # Return the ID of the user that sent the message
-  update.message.reply_text(
-    # chat_id=update.effective_chat.id,
-    text = f'Tu ID es: {update.effective_user.id}',
-    parse_mode='Markdown'
+  await context.bot.send_message(
+    chat_id=update.effective_chat.id,
+    text=f"*Tu ID es: *{update.effective_user.id}",
+    parse_mode="Markdown"
+  )
+
+async def getGroupID(update, context):
+  # Return the ID of the group from which the message was sent
+  await context.bot.send_message(
+    chat_id=update.effective_chat.id,
+    text=f"*El ID del grupo es: *{update.effective_chat.id}",
+    parse_mode="Markdown"
   )

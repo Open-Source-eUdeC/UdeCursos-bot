@@ -1,66 +1,71 @@
-import os
 import logging
-import subprocess 
-from pytz import timezone
-from datetime import datetime
-from telegram.ext import ( Updater, CommandHandler )
+from telegram import Update
+from telegram.ext import (
+    ApplicationBuilder, 
+    CallbackContext,
+    CommandHandler,
+    MessageHandler,
+    filters
+)
 #
 from components.fetch import fetch_token
-#
-from commands.start import start
-from commands.help import help
-from commands.version import version
+from commands.source import source
+from commands.getid import getID, getGroupID
+from commands.history import history
 from commands.certs import certs
-from commands.get import get
-from commands.sched import sched
-from commands.horario import horario
-from commands.getid import getID
-from commands.admin import setAdmin
-from commands.Cronjobs import *
-
+from commands.remove import *
+from commands.add import *
 
 logging.basicConfig(
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
     level=logging.INFO
 )
 
-# Initilizing config variables to be used in the bot
-logger = logging.getLogger(__name__)
-updater = Updater(token=fetch_token(), use_context=True)
-job_queue = updater.job_queue
-tz = timezone('America/Santiago')
-dt = datetime.now(tz)
-
-# Run initializer for binaries
-if not os.path.exists('bin/insert_cert'):
-    command = "g++ bin/src/insert_cert.cpp -o bin/insert_cert"
-    subprocess.run(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-
-
-def main():
-    dp = updater.dispatcher
-    dp.add_handler(CommandHandler("start", start))
-    dp.add_handler(CommandHandler('udecursos', help))
-    dp.add_handler(CommandHandler('version', version))
-    dp.add_handler(CommandHandler('certs', certs, pass_args=True))
-    dp.add_handler(CommandHandler('sched', sched))
-    dp.add_handler(CommandHandler('get', get))
-    dp.add_handler(CommandHandler('horario', horario))
-    dp.add_handler(CommandHandler('myid', getID))
-    dp.add_handler(CommandHandler('setadmin', setAdmin))
-
-    job_queue = updater.job_queue
-    job_queue.run_daily(
-        greetThursday,
-        time=dt.replace(hour=8, minute=0, second=0, microsecond=0),
-        days=(3, ),
-        name='Felíz Jueves'
+async def start(update: Update, context: CallbackContext):
+    await context.bot.send_message(
+        chat_id=update.effective_chat.id,
+        text=(
+            "👋 ¡Hey, aquí UdeCursos Bot!\n\n"
+            "Todo listo para comenzar ✅\n"
+            "_Para obtener ayuda escribe /udecursos_ \n\n"
+            "No olvides visitarme en: [UdeCursos.study](https://udecursos.study/) 🔗 !"
+        ),
+        parse_mode='Markdown'
     )
 
-    print('[ ! ] Initializing bot ...')
-    updater.start_polling()
-    print('[ ok ] Bot is running ...')
-    updater.idle()
 
-if __name__ == '__main__':
-    main()
+if __name__ == "__main__":
+    bot = (
+        ApplicationBuilder()
+        .token(fetch_token())
+        .build()
+    )
+
+    bot.add_handler(CommandHandler("start", start))
+    bot.add_handler(CommandHandler("source", source))
+    bot.add_handler(CommandHandler("myid", getID))
+    bot.add_handler(CommandHandler("groupid", getGroupID))
+    bot.add_handler(CommandHandler("certs", certs))
+    bot.add_handler(CommandHandler("history", history))
+
+    add_conv = ConversationHandler(
+        entry_points=[CommandHandler('add', add)],
+        states={
+            CERT_INFO: [MessageHandler(filters.TEXT, cert_info)],
+            ADD_CERT: [MessageHandler(filters.TEXT, cert_operation)]
+        },
+        fallbacks=[CommandHandler('cancel', cancel)]
+    )
+    remove_conv = ConversationHandler(
+        entry_points=[CommandHandler('remove', remove)],
+        states={
+            REMOVE_CONFIRM: [MessageHandler(filters.TEXT, remove_confirm)], # Pending Regex filter
+            REMOVE_CERT: [MessageHandler(filters.Regex("^(👍|❌)$"), remove_cert)]
+        },
+        fallbacks=[CommandHandler('cancel', cancel)]
+    )
+
+    bot.add_handler(add_conv)
+    bot.add_handler(remove_conv)
+
+    bot.run_polling()
