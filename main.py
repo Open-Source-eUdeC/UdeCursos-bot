@@ -13,6 +13,7 @@ from commands.source import source
 from commands.getid import getID, getGroupID
 from commands.history import history
 from commands.certs import certs
+from commands.juna import juna
 from commands.remove import *
 from commands.add import *
 
@@ -47,6 +48,7 @@ if __name__ == "__main__":
     bot.add_handler(CommandHandler("groupid", getGroupID))
     bot.add_handler(CommandHandler("certs", certs))
     bot.add_handler(CommandHandler("history", history))
+    bot.add_handler(CommandHandler("juna", juna))
 
     add_conv = ConversationHandler(
         entry_points=[CommandHandler('add', add)],
