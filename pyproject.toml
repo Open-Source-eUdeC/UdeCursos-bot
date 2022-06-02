@@ -8,6 +8,8 @@ license = "MIT"
 [tool.poetry.dependencies]
 python = "^3.8"
 python-telegram-bot = "^20.0a0"
+beautifulsoup4 = "^4.11.1"
+requests = "^2.27.1"
 
 [tool.poetry.dev-dependencies]
 
