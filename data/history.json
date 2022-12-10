@@ -1,6 +1,2048 @@
 {
-  "gen2022": [],
-  "gen2021": [],
+  "gen2022": [
+    {
+      "date": "2022-05-22",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-05-22",
+        "Tarea",
+        "funciona vamos fuck"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "Carlos",
+      "action": "/remove",
+      "params": [
+        "[Tarea] funciona vamos fuck 2022-05-22"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "M. (odia a B)",
+      "action": "/remove",
+      "params": [
+        "[Test] C\u00e1lculo 2022-06-11"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M. (odia a B)"
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-05-23",
+        "Cert",
+        "Cazuela de pollo"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "M. (odia a B)",
+      "action": "/remove",
+      "params": [
+        "[Test] C\u00e1lculo I 2022-05-28"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M. (odia a B)"
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-05-24",
+        "Tarea",
+        "Porotos"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "M. (odia a B)",
+      "action": "/add",
+      "params": [
+        "2022-06-11",
+        "Test",
+        "C\u00e1lculo I"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M. (odia a B)"
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-06-11",
+        "Test",
+        "C\u00e1lculo I"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "Carlos",
+      "action": "/remove",
+      "params": [
+        "[Cert] Cazuela de pollo 2022-05-23"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-31",
+      "name": "Valent\u00edn",
+      "action": "/add",
+      "params": [
+        "2022-06-14",
+        "Cert",
+        "C\u00e1lculo I"
+      ],
+      "user": {
+        "id": 5180460595,
+        "name": "Valent\u00edn"
+      }
+    },
+    {
+      "date": "2022-06-02",
+      "name": "M. (odia a B)",
+      "action": "/add",
+      "params": [
+        "2022-06-17",
+        "Cert",
+        "\u00c1lgebra I"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M. (odia a B)"
+      }
+    },
+    {
+      "date": "2022-06-02",
+      "name": "M. (odia a B)",
+      "action": "/remove",
+      "params": [
+        "[Cert] Algebra 2022-06-03"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M. (odia a B)"
+      }
+    },
+    {
+      "date": "2022-06-03",
+      "name": "M. (odia a B)",
+      "action": "/add",
+      "params": [
+        "2022-06-20",
+        "Cert",
+        "F\u00edsica I"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M. (odia a B)"
+      }
+    },
+    {
+      "date": "2022-06-03",
+      "name": "M. (odia a B)",
+      "action": "/remove",
+      "params": [
+        "[Cert] F\u00edsica 2022-06-07"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M. (odia a B)"
+      }
+    },
+    {
+      "date": "2022-06-06",
+      "name": "Angie",
+      "action": "/add",
+      "params": [
+        "2022-06-10",
+        "Test",
+        "Qu\u00edmica General I"
+      ],
+      "user": {
+        "id": 5292258812,
+        "name": "Angie"
+      }
+    },
+    {
+      "date": "2022-06-06",
+      "name": "Angie",
+      "action": "/add",
+      "params": [
+        "2022-06-10",
+        "Test",
+        "\u00c1lgebra I"
+      ],
+      "user": {
+        "id": 5292258812,
+        "name": "Angie"
+      }
+    },
+    {
+      "date": "2022-06-09",
+      "name": "Sh1r8",
+      "action": "/remove",
+      "params": [
+        "[Test] C\u00e1lculo I 2022-06-11"
+      ],
+      "user": {
+        "id": 1596029559,
+        "name": "Sh1r8"
+      }
+    },
+    {
+      "date": "2022-06-12",
+      "name": "Pia",
+      "action": "/add",
+      "params": [
+        "2022-07-01",
+        "Test",
+        "Qu\u00edmica General I"
+      ],
+      "user": {
+        "id": 5148637225,
+        "name": "Pia"
+      }
+    },
+    {
+      "date": "2022-06-12",
+      "name": "Pia",
+      "action": "/remove",
+      "params": [
+        "[Test] Qu\u00edmica General I 2022-06-24"
+      ],
+      "user": {
+        "id": 5148637225,
+        "name": "Pia"
+      }
+    },
+    {
+      "date": "2022-06-20",
+      "name": "M.",
+      "action": "/add",
+      "params": [
+        "2022-07-06",
+        "Cert",
+        "\u00c1lgebra I"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M."
+      }
+    },
+    {
+      "date": "2022-06-20",
+      "name": "M.",
+      "action": "/add",
+      "params": [
+        "2022-08-03",
+        "no",
+        "\u00c1lgebra I"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M."
+      }
+    },
+    {
+      "date": "2022-06-20",
+      "name": "M.",
+      "action": "/remove",
+      "params": [
+        "[no] \u00c1lgebra I 2022-08-03"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M."
+      }
+    },
+    {
+      "date": "2022-06-20",
+      "name": "M.",
+      "action": "/add",
+      "params": [
+        "2022-08-03",
+        "Repete",
+        "\u00c1lgebra I"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M."
+      }
+    },
+    {
+      "date": "2022-06-28",
+      "name": "Pia",
+      "action": "/remove",
+      "params": [
+        "[Cert] Qu\u00edmica General I 2022-07-05"
+      ],
+      "user": {
+        "id": 5148637225,
+        "name": "Pia"
+      }
+    },
+    {
+      "date": "2022-06-28",
+      "name": "Pia",
+      "action": "/add",
+      "params": [
+        "2022-07-12",
+        "Cert",
+        "Qu\u00edmica General I"
+      ],
+      "user": {
+        "id": 5148637225,
+        "name": "Pia"
+      }
+    },
+    {
+      "date": "2022-06-28",
+      "name": "Pia",
+      "action": "/add",
+      "params": [
+        "2022-08-01",
+        "Repete",
+        "C\u00e1lculo I"
+      ],
+      "user": {
+        "id": 5148637225,
+        "name": "Pia"
+      }
+    },
+    {
+      "date": "2022-06-28",
+      "name": "Pia",
+      "action": "/add",
+      "params": [
+        "2022-07-22",
+        "Repete",
+        "Qu\u00edmica General I"
+      ],
+      "user": {
+        "id": 5148637225,
+        "name": "Pia"
+      }
+    },
+    {
+      "date": "2022-06-28",
+      "name": "Pia",
+      "action": "/add",
+      "params": [
+        "2022-07-08",
+        "Cert",
+        "C\u00e1lculo I"
+      ],
+      "user": {
+        "id": 5148637225,
+        "name": "Pia"
+      }
+    },
+    {
+      "date": "2022-06-28",
+      "name": "M.",
+      "action": "/remove",
+      "params": [
+        "[Cert] \u00c1lgebra I 2022-07-06"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M."
+      }
+    },
+    {
+      "date": "2022-06-28",
+      "name": "M.",
+      "action": "/add",
+      "params": [
+        "2022-07-05",
+        "Cert",
+        "\u00c1lgebra I"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M."
+      }
+    },
+    {
+      "date": "2022-06-30",
+      "name": "Ricardo Andres",
+      "action": "/add",
+      "params": [
+        "2022-07-05",
+        "Q wea",
+        "X2"
+      ],
+      "user": {
+        "id": 845621642,
+        "name": "Ricardo Andres"
+      }
+    },
+    {
+      "date": "2022-07-04",
+      "name": "Ricardo Andres",
+      "action": "/remove",
+      "params": [
+        "[Q wea] X2 2022-07-05"
+      ],
+      "user": {
+        "id": 845621642,
+        "name": "Ricardo Andres"
+      }
+    },
+    {
+      "date": "2022-07-15",
+      "name": "Rodrigo M.",
+      "action": "/add",
+      "params": [
+        "2022-07-15",
+        "Cert",
+        "F\u00edsica I"
+      ],
+      "user": {
+        "id": 5142504552,
+        "name": "Rodrigo M."
+      }
+    },
+    {
+      "date": "2022-09-01",
+      "name": "\ub9c8\ud2f0",
+      "action": "/add",
+      "params": [
+        "2022-09-20",
+        "Cert",
+        "\u00c1lgebra 2"
+      ],
+      "user": {
+        "id": 1645550227,
+        "name": "\ub9c8\ud2f0"
+      }
+    },
+    {
+      "date": "2022-09-01",
+      "name": "(M)itocondria",
+      "action": "/add",
+      "params": [
+        "2022-09-20",
+        "Cert",
+        "\u00c1lgebra I"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "(M)itocondria"
+      }
+    },
+    {
+      "date": "2022-09-01",
+      "name": "(M)itocondria",
+      "action": "/add",
+      "params": [
+        "2022-10-28",
+        "Cert",
+        "\u00c1lgebra I"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "(M)itocondria"
+      }
+    },
+    {
+      "date": "2022-09-01",
+      "name": "(M)itocondria",
+      "action": "/add",
+      "params": [
+        "2022-12-07",
+        "Cert",
+        "\u00c1lgebra I"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "(M)itocondria"
+      }
+    },
+    {
+      "date": "2022-09-01",
+      "name": "Sh1r8",
+      "action": "/add",
+      "params": [
+        "2022-09-12",
+        "Cert",
+        "C\u00e1lculo I"
+      ],
+      "user": {
+        "id": 1596029559,
+        "name": "Sh1r8"
+      }
+    },
+    {
+      "date": "2022-09-07",
+      "name": "(M)itocondria",
+      "action": "/add",
+      "params": [
+        "2022-09-14",
+        "Cert",
+        "F\u00edsica II"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "(M)itocondria"
+      }
+    },
+    {
+      "date": "2022-09-29",
+      "name": "Rodrigo M.",
+      "action": "/add",
+      "params": [
+        "2022-10-24",
+        "Cert",
+        "C\u00e1lculo I"
+      ],
+      "user": {
+        "id": 5142504552,
+        "name": "Rodrigo M."
+      }
+    },
+    {
+      "date": "2022-09-29",
+      "name": "Nodercif",
+      "action": "/add",
+      "params": [
+        "2022-10-28",
+        "\u00c1lgebra II",
+        "\u00c1lgebra II"
+      ],
+      "user": {
+        "id": 1332428594,
+        "name": "Nodercif"
+      }
+    },
+    {
+      "date": "2022-09-29",
+      "name": "Nodercif",
+      "action": "/add",
+      "params": [
+        "2022-10-26",
+        "Cert",
+        "F\u00edsica II"
+      ],
+      "user": {
+        "id": 1332428594,
+        "name": "Nodercif"
+      }
+    },
+    {
+      "date": "2022-09-29",
+      "name": "Nodercif",
+      "action": "/remove",
+      "params": [
+        "\u00c1lgebra II"
+      ],
+      "user": {
+        "id": 1332428594,
+        "name": "Nodercif"
+      }
+    },
+    {
+      "date": "2022-09-29",
+      "name": "Nodercif",
+      "action": "/add",
+      "params": [
+        "2022-10-28",
+        "Cert",
+        "\u00c1lgebra II"
+      ],
+      "user": {
+        "id": 1332428594,
+        "name": "Nodercif"
+      }
+    },
+    {
+      "date": "2022-09-29",
+      "name": "(M) \u2286 \u2205",
+      "action": "/remove",
+      "params": [
+        "[\u00c1lgebra II] \u00c1lgebra II 2022-10-28"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "(M) \u2286 \u2205"
+      }
+    },
+    {
+      "date": "2022-09-29",
+      "name": "Mad",
+      "action": "/add",
+      "params": [
+        "2022-10-03",
+        "Cert",
+        "Qu\u00edmica General I"
+      ],
+      "user": {
+        "id": 1825675461,
+        "name": "Mad"
+      }
+    },
+    {
+      "date": "2022-09-29",
+      "name": "Rodrigo M.",
+      "action": "/add",
+      "params": [
+        "2022-10-5",
+        "Test",
+        "F\u00edsica II"
+      ],
+      "user": {
+        "id": 5142504552,
+        "name": "Rodrigo M."
+      }
+    },
+    {
+      "date": "2022-11-01",
+      "name": "Sh1r8",
+      "action": "/add",
+      "params": [
+        "2022-12-2",
+        "Cert",
+        "C\u00e1lculo I"
+      ],
+      "user": {
+        "id": 1596029559,
+        "name": "Sh1r8"
+      }
+    },
+    {
+      "date": "2022-11-08",
+      "name": "Pia",
+      "action": "/add",
+      "params": [
+        "2022-11-28",
+        "Cert",
+        "Qu\u00edmica General I"
+      ],
+      "user": {
+        "id": 5148637225,
+        "name": "Pia"
+      }
+    },
+    {
+      "date": "2022-11-20",
+      "name": "Nodercif",
+      "action": "/add",
+      "params": [
+        "2022-05-12",
+        "Cert",
+        "/add 12-05"
+      ],
+      "user": {
+        "id": 1332428594,
+        "name": "Nodercif"
+      }
+    },
+    {
+      "date": "2022-11-20",
+      "name": "Nodercif",
+      "action": "/add",
+      "params": [
+        "2022-12-05",
+        "Cert",
+        "F\u00edsica II"
+      ],
+      "user": {
+        "id": 1332428594,
+        "name": "Nodercif"
+      }
+    }
+  ],
+  "gen2021": [
+    {
+      "date": "2022-05-22",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-05-22",
+        "Tarea",
+        "Vamo chileeeee funciona xd"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "franche triste no hablar de edo, gracias.",
+      "action": "/add",
+      "params": [
+        "2022-04-07",
+        "Cert",
+        "EDO"
+      ],
+      "user": {
+        "id": 1603557461,
+        "name": "franche triste no hablar de edo, gracias."
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "Carlos",
+      "action": "/remove",
+      "params": [
+        "[Cert] EDO 2022-04-07"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "franche triste no hablar de edo, gracias.",
+      "action": "/add",
+      "params": [
+        "2022-07-04",
+        "Cert",
+        "EDO"
+      ],
+      "user": {
+        "id": 1603557461,
+        "name": "franche triste no hablar de edo, gracias."
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "franche triste no hablar de edo, gracias.",
+      "action": "/add",
+      "params": [
+        "2022-07-01",
+        "Cert",
+        "C\u00e1lculo III"
+      ],
+      "user": {
+        "id": 1603557461,
+        "name": "franche triste no hablar de edo, gracias."
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "Carlos",
+      "action": "/remove",
+      "params": [
+        "[Tarea] Vamo chileeeee funciona xd 2022-05-22"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "M. (odia a B)",
+      "action": "/remove",
+      "params": [
+        "[Test] C\u00e1lculo II 2022-05-25"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M. (odia a B)"
+      }
+    },
+    {
+      "date": "2022-05-24",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-06-03",
+        "Tarea",
+        "Programaci\u00f3n I"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-24",
+      "name": "\ub9c8\ud2f0",
+      "action": "/remove",
+      "params": [
+        "[Test] C\u00e1lculo II 2022-04-15"
+      ],
+      "user": {
+        "id": 1645550227,
+        "name": "\ub9c8\ud2f0"
+      }
+    },
+    {
+      "date": "2022-05-24",
+      "name": "\ub9c8\ud2f0",
+      "action": "/remove",
+      "params": [
+        "[Test] C\u00e1lculo II 2022-05-25"
+      ],
+      "user": {
+        "id": 1645550227,
+        "name": "\ub9c8\ud2f0"
+      }
+    },
+    {
+      "date": "2022-05-27",
+      "name": "Carlos",
+      "action": "/remove",
+      "params": [
+        "[Tarea] Programaci\u00f3n I 2022-06-03"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-27",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-06-08",
+        "Tarea",
+        "Programaci\u00f3n I"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-27",
+      "name": "Carlos",
+      "action": "/remove",
+      "params": [
+        "[Cert] L\u00f3gica 2022-05-30"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-31",
+      "name": "Carlos",
+      "action": "/remove",
+      "params": [
+        "[Cert] C\u00e1lculo II 2022-05-31"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-31",
+      "name": "Carlos",
+      "action": "/remove",
+      "params": [
+        "[Cert] \u00c1lgebra II 2022-06-03"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-31",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-06-14",
+        "Cert",
+        "C\u00e1lculo II"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-31",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-07-08",
+        "Cert",
+        "C\u00e1lculo II"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-31",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-08-01",
+        "Cert",
+        "C\u00e1lculo II"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-31",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-06-24",
+        "Tarea",
+        "Programaci\u00f3n I"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-31",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-06-06",
+        "Cert",
+        "L\u00f3gica"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-31",
+      "name": "\ub9c8\ud2f0",
+      "action": "/add",
+      "params": [
+        "2022-06-16",
+        "Cert",
+        "\u00c1lgebra II"
+      ],
+      "user": {
+        "id": 1645550227,
+        "name": "\ub9c8\ud2f0"
+      }
+    },
+    {
+      "date": "2022-05-31",
+      "name": "\ub9c8\ud2f0",
+      "action": "/add",
+      "params": [
+        "2022-07-06",
+        "Cert",
+        "\u00c1lgebra II"
+      ],
+      "user": {
+        "id": 1645550227,
+        "name": "\ub9c8\ud2f0"
+      }
+    },
+    {
+      "date": "2022-06-06",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-06-08",
+        "Test",
+        "\u00c1lgebra II"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-06-06",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-06-14",
+        "Test",
+        "\u00c1lgebra II"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-06-06",
+      "name": "Carlos",
+      "action": "/remove",
+      "params": [
+        "[Cert] \u00c1lgebra II 2022-07-09"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-06-06",
+      "name": "Carlos",
+      "action": "/remove",
+      "params": [
+        "[Cert] \u00c1lgebra II 2022-07-06"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-06-06",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-06-17",
+        "Cert",
+        "\u00c1lgebra II"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-06-09",
+      "name": "B)",
+      "action": "/add",
+      "params": [
+        "2022-07-08",
+        "Cert",
+        "EDO"
+      ],
+      "user": {
+        "id": 1449591574,
+        "name": "B)"
+      }
+    },
+    {
+      "date": "2022-06-09",
+      "name": "B)",
+      "action": "/remove",
+      "params": [
+        "[Cert] EDO 2022-07-04"
+      ],
+      "user": {
+        "id": 1449591574,
+        "name": "B)"
+      }
+    },
+    {
+      "date": "2022-06-10",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-06-24",
+        "Test",
+        "Programaci\u00f3n I"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-06-11",
+      "name": "M el full vivid de inform\u00e1tica",
+      "action": "/remove",
+      "params": [
+        "[Tarea] Programaci\u00f3n I 2022-06-24"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M el full vivid de inform\u00e1tica"
+      }
+    },
+    {
+      "date": "2022-06-15",
+      "name": "B)",
+      "action": "/add",
+      "params": [
+        "2022-07-01",
+        "Cert",
+        "C\u00e1lculo III"
+      ],
+      "user": {
+        "id": 1449591574,
+        "name": "B)"
+      }
+    },
+    {
+      "date": "2022-06-15",
+      "name": "M el full vivid de inform\u00e1tica",
+      "action": "/remove",
+      "params": [
+        "[Cert] L\u00f3gica 2022-06-27"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M el full vivid de inform\u00e1tica"
+      }
+    },
+    {
+      "date": "2022-06-16",
+      "name": "M el full vivid de inform\u00e1tica",
+      "action": "/remove",
+      "params": [
+        "[Cert] C\u00e1lculo II 2022-07-02"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M el full vivid de inform\u00e1tica"
+      }
+    },
+    {
+      "date": "2022-06-16",
+      "name": "M el full vivid de inform\u00e1tica",
+      "action": "/remove",
+      "params": [
+        "[Cert] C\u00e1lculo II 2022-07-01"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M el full vivid de inform\u00e1tica"
+      }
+    },
+    {
+      "date": "2022-06-22",
+      "name": "franche triste no hablar de ning\u00fan ramo de la cfm, gracias .",
+      "action": "/remove",
+      "params": [
+        "[Cert] C\u00e1lculo III 2022-07-01"
+      ],
+      "user": {
+        "id": 1603557461,
+        "name": "franche triste no hablar de ning\u00fan ramo de la cfm, gracias ."
+      }
+    },
+    {
+      "date": "2022-06-22",
+      "name": "franche triste no hablar de ning\u00fan ramo de la cfm, gracias .",
+      "action": "/add",
+      "params": [
+        "2022-07-07",
+        "Cert",
+        "C\u00e1lculo III"
+      ],
+      "user": {
+        "id": 1603557461,
+        "name": "franche triste no hablar de ning\u00fan ramo de la cfm, gracias ."
+      }
+    },
+    {
+      "date": "2022-06-23",
+      "name": "M.",
+      "action": "/add",
+      "params": [
+        "2022-06-27",
+        "posible",
+        "L\u00f3gica"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M."
+      }
+    },
+    {
+      "date": "2022-06-23",
+      "name": "M.",
+      "action": "/remove",
+      "params": [
+        "[posible] L\u00f3gica 2022-06-27"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M."
+      }
+    },
+    {
+      "date": "2022-06-23",
+      "name": "M.",
+      "action": "/add",
+      "params": [
+        "2022-07-01",
+        "posible",
+        "L\u00f3gica"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M."
+      }
+    },
+    {
+      "date": "2022-06-23",
+      "name": "M.",
+      "action": "/add",
+      "params": [
+        "2022-07-04",
+        "posible2",
+        "L\u00f3gica"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M."
+      }
+    },
+    {
+      "date": "2022-06-23",
+      "name": "B)",
+      "action": "/remove",
+      "params": [
+        "[posible] L\u00f3gica 2022-07-01"
+      ],
+      "user": {
+        "id": 1449591574,
+        "name": "B)"
+      }
+    },
+    {
+      "date": "2022-06-23",
+      "name": "B)",
+      "action": "/remove",
+      "params": [
+        "[posible2] L\u00f3gica 2022-07-04"
+      ],
+      "user": {
+        "id": 1449591574,
+        "name": "B)"
+      }
+    },
+    {
+      "date": "2022-06-24",
+      "name": "\ub9c8\ud2f0",
+      "action": "/add",
+      "params": [
+        "2022-07-05",
+        "Cert",
+        "\u00c1lgebra II"
+      ],
+      "user": {
+        "id": 1645550227,
+        "name": "\ub9c8\ud2f0"
+      }
+    },
+    {
+      "date": "2022-06-24",
+      "name": "\ub9c8\ud2f0",
+      "action": "/add",
+      "params": [
+        "2022-07-05",
+        "Cert",
+        "Mat discretas"
+      ],
+      "user": {
+        "id": 1645550227,
+        "name": "\ub9c8\ud2f0"
+      }
+    },
+    {
+      "date": "2022-06-26",
+      "name": "franche triste no hablar de ning\u00fan ramo de la cfm, gracias .",
+      "action": "/remove",
+      "params": [
+        "[Cert] EDO 2022-07-08"
+      ],
+      "user": {
+        "id": 1603557461,
+        "name": "franche triste no hablar de ning\u00fan ramo de la cfm, gracias ."
+      }
+    },
+    {
+      "date": "2022-06-26",
+      "name": "franche triste no hablar de ning\u00fan ramo de la cfm, gracias .",
+      "action": "/add",
+      "params": [
+        "2022-07-05",
+        "Cert",
+        "EDO"
+      ],
+      "user": {
+        "id": 1603557461,
+        "name": "franche triste no hablar de ning\u00fan ramo de la cfm, gracias ."
+      }
+    },
+    {
+      "date": "2022-07-02",
+      "name": "\ub9c8\ud2f0",
+      "action": "/remove",
+      "params": [
+        "[Tarea] Programaci\u00f3n I 2022-07-08"
+      ],
+      "user": {
+        "id": 1645550227,
+        "name": "\ub9c8\ud2f0"
+      }
+    },
+    {
+      "date": "2022-07-02",
+      "name": "\ub9c8\ud2f0",
+      "action": "/add",
+      "params": [
+        "2022-07-15",
+        "Tarea",
+        "Programaci\u00f3n I"
+      ],
+      "user": {
+        "id": 1645550227,
+        "name": "\ub9c8\ud2f0"
+      }
+    },
+    {
+      "date": "2022-07-05",
+      "name": "M.",
+      "action": "/add",
+      "params": [
+        "2022-07-09",
+        "Cert",
+        "L\u00f3gica"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M."
+      }
+    },
+    {
+      "date": "2022-07-05",
+      "name": "M.",
+      "action": "/add",
+      "params": [
+        "2022-07-08",
+        "Cert",
+        "L\u00f3gica"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M."
+      }
+    },
+    {
+      "date": "2022-07-05",
+      "name": "M.",
+      "action": "/remove",
+      "params": [
+        "[Cert] L\u00f3gica 2022-07-08"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M."
+      }
+    },
+    {
+      "date": "2022-07-05",
+      "name": "M.",
+      "action": "/remove",
+      "params": [
+        "[Cert] L\u00f3gica 2022-07-09"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M."
+      }
+    },
+    {
+      "date": "2022-07-05",
+      "name": "M.",
+      "action": "/add",
+      "params": [
+        "2022-07-08",
+        "Cert",
+        "L\u00f3gica"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M."
+      }
+    },
+    {
+      "date": "2022-07-09",
+      "name": "\ub9c8\ud2f0",
+      "action": "/add",
+      "params": [
+        "2022-08-03",
+        "Test",
+        "\u00c1lgebra II"
+      ],
+      "user": {
+        "id": 1645550227,
+        "name": "\ub9c8\ud2f0"
+      }
+    },
+    {
+      "date": "2022-07-09",
+      "name": "\ub9c8\ud2f0",
+      "action": "/add",
+      "params": [
+        "2022-07-17",
+        "Cert",
+        "L\u00f3gica"
+      ],
+      "user": {
+        "id": 1645550227,
+        "name": "\ub9c8\ud2f0"
+      }
+    },
+    {
+      "date": "2022-07-09",
+      "name": "\ub9c8\ud2f0",
+      "action": "/add",
+      "params": [
+        "2022-07-12",
+        "Cert",
+        "Mat discretas"
+      ],
+      "user": {
+        "id": 1645550227,
+        "name": "\ub9c8\ud2f0"
+      }
+    },
+    {
+      "date": "2022-07-09",
+      "name": "franche triste no hablar de ning\u00fan ramo de la cfm, gracias .",
+      "action": "/add",
+      "params": [
+        "2022-07-19",
+        "/Repete",
+        "EDO"
+      ],
+      "user": {
+        "id": 1603557461,
+        "name": "franche triste no hablar de ning\u00fan ramo de la cfm, gracias ."
+      }
+    },
+    {
+      "date": "2022-07-09",
+      "name": "franche triste no hablar de ning\u00fan ramo de la cfm, gracias .",
+      "action": "/remove",
+      "params": [
+        "[/Repete] EDO 2022-07-19"
+      ],
+      "user": {
+        "id": 1603557461,
+        "name": "franche triste no hablar de ning\u00fan ramo de la cfm, gracias ."
+      }
+    },
+    {
+      "date": "2022-07-11",
+      "name": "\ub9c8\ud2f0",
+      "action": "/add",
+      "params": [
+        "2022-07-22",
+        "Cert",
+        "Programaci\u00f3n I"
+      ],
+      "user": {
+        "id": 1645550227,
+        "name": "\ub9c8\ud2f0"
+      }
+    },
+    {
+      "date": "2022-07-14",
+      "name": "\ub9c8\ud2f0",
+      "action": "/add",
+      "params": [
+        "2022-07-15",
+        "Importante",
+        "Desinscribir ramos"
+      ],
+      "user": {
+        "id": 1645550227,
+        "name": "\ub9c8\ud2f0"
+      }
+    },
+    {
+      "date": "2022-07-15",
+      "name": "M. Abuelo razones:",
+      "action": "/add",
+      "params": [
+        "2022-07-20",
+        "repete",
+        "L\u00f3gica"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M. Abuelo razones:"
+      }
+    },
+    {
+      "date": "2022-07-15",
+      "name": "M. Abuelo razones:",
+      "action": "/remove",
+      "params": [
+        "[Cert] L\u00f3gica 2022-07-08"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M. Abuelo razones:"
+      }
+    },
+    {
+      "date": "2022-07-15",
+      "name": "M. Abuelo razones:",
+      "action": "/remove",
+      "params": [
+        "[Cert] L\u00f3gica 2022-07-17"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "M. Abuelo razones:"
+      }
+    },
+    {
+      "date": "2022-07-17",
+      "name": "Leonardo",
+      "action": "/add",
+      "params": [
+        "2022-07-21",
+        "repete",
+        "C\u00e1lculo III"
+      ],
+      "user": {
+        "id": 1692562634,
+        "name": "Leonardo"
+      }
+    },
+    {
+      "date": "2022-08-28",
+      "name": "Willy",
+      "action": "/add",
+      "params": [
+        "2022-10-04",
+        "Cert",
+        "Mat.Discretas"
+      ],
+      "user": {
+        "id": 1625589247,
+        "name": "Willy"
+      }
+    },
+    {
+      "date": "2022-09-01",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-09-20",
+        "Cert",
+        "\u00c1lgebra II"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-09-01",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-10-28",
+        "Cert",
+        "\u00c1lgebra II"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-09-01",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-12-07",
+        "Cert",
+        "\u00c1lgebra II"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-09-01",
+      "name": "Pepancho",
+      "action": "/add",
+      "params": [
+        "2022-10-7",
+        "Cert",
+        "Electromagnetismo"
+      ],
+      "user": {
+        "id": 1601520794,
+        "name": "Pepancho"
+      }
+    },
+    {
+      "date": "2022-09-01",
+      "name": "Basti\u00e1n",
+      "action": "/add",
+      "params": [
+        "2022-09-27",
+        "Cert",
+        "EDO"
+      ],
+      "user": {
+        "id": 1562238328,
+        "name": "Basti\u00e1n"
+      }
+    },
+    {
+      "date": "2022-09-01",
+      "name": "Basti\u00e1n",
+      "action": "/add",
+      "params": [
+        "2022-12-07",
+        "Cert",
+        "EDO"
+      ],
+      "user": {
+        "id": 1562238328,
+        "name": "Basti\u00e1n"
+      }
+    },
+    {
+      "date": "2022-09-02",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-09-12",
+        "Cert",
+        "C\u00e1lculo II"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-09-02",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-10-24",
+        "Cert",
+        "C\u00e1lculo II"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-09-02",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-12-02",
+        "Cert",
+        "C\u00e1lculo II"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-09-02",
+      "name": "Pepancho",
+      "action": "/add",
+      "params": [
+        "2022-9-27",
+        "Cert",
+        "Num\u00e9rico"
+      ],
+      "user": {
+        "id": 1601520794,
+        "name": "Pepancho"
+      }
+    },
+    {
+      "date": "2022-09-02",
+      "name": "Pepancho",
+      "action": "/add",
+      "params": [
+        "2022-11-4",
+        "Cert",
+        "Electromagnetismo"
+      ],
+      "user": {
+        "id": 1601520794,
+        "name": "Pepancho"
+      }
+    },
+    {
+      "date": "2022-09-02",
+      "name": "Pepancho",
+      "action": "/add",
+      "params": [
+        "2022-12-2",
+        "Cert",
+        "Electromagnetismo"
+      ],
+      "user": {
+        "id": 1601520794,
+        "name": "Pepancho"
+      }
+    },
+    {
+      "date": "2022-09-02",
+      "name": "Pepancho",
+      "action": "/add",
+      "params": [
+        "2022-12-7",
+        "Cert",
+        "Num\u00e9rico"
+      ],
+      "user": {
+        "id": 1601520794,
+        "name": "Pepancho"
+      }
+    },
+    {
+      "date": "2022-09-02",
+      "name": "(M)itocondria",
+      "action": "/add",
+      "params": [
+        "2022-10-06",
+        "Cert",
+        "C\u00e1lculo III"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "(M)itocondria"
+      }
+    },
+    {
+      "date": "2022-09-04",
+      "name": "(M)itocondria",
+      "action": "/add",
+      "params": [
+        "2022-09-16",
+        "Cert",
+        "L\u00f3gica"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "(M)itocondria"
+      }
+    },
+    {
+      "date": "2022-09-04",
+      "name": "(M)itocondria",
+      "action": "/add",
+      "params": [
+        "2022-10-28",
+        "Cert",
+        "L\u00f3gica"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "(M)itocondria"
+      }
+    },
+    {
+      "date": "2022-09-04",
+      "name": "(M)itocondria",
+      "action": "/remove",
+      "params": [
+        "[Cert] L\u00f3gica 2022-09-16"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "(M)itocondria"
+      }
+    },
+    {
+      "date": "2022-09-04",
+      "name": "(M)itocondria",
+      "action": "/remove",
+      "params": [
+        "[Cert] L\u00f3gica 2022-10-28"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "(M)itocondria"
+      }
+    },
+    {
+      "date": "2022-09-04",
+      "name": "(M)itocondria",
+      "action": "/add",
+      "params": [
+        "2022-09-15",
+        "Cert",
+        "L\u00f3gica"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "(M)itocondria"
+      }
+    },
+    {
+      "date": "2022-09-04",
+      "name": "(M)itocondria",
+      "action": "/add",
+      "params": [
+        "2022-10-27",
+        "Cert",
+        "L\u00f3gica"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "(M)itocondria"
+      }
+    },
+    {
+      "date": "2022-09-17",
+      "name": "(M) \u2286 \u2205",
+      "action": "/add",
+      "params": [
+        "2022-09-22",
+        "Cert",
+        "L\u00f3gica"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "(M) \u2286 \u2205"
+      }
+    },
+    {
+      "date": "2022-09-22",
+      "name": "(M) \u2286 \u2205",
+      "action": "/add",
+      "params": [
+        "2022-10-03",
+        "Cert",
+        "Programaci\u00f3n I"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "(M) \u2286 \u2205"
+      }
+    },
+    {
+      "date": "2022-10-05",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-09-09",
+        "Tarea",
+        "Programaci\u00f3n II"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-10-05",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-10-09",
+        "Tarea",
+        "Programaci\u00f3n II"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-10-05",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-10-27",
+        "Tarea",
+        "Programaci\u00f3n II"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-10-23",
+      "name": "J)",
+      "action": "/add",
+      "params": [
+        "2022-10-30",
+        "Test",
+        "Programaci\u00f3n II"
+      ],
+      "user": {
+        "id": 1690636606,
+        "name": "J)"
+      }
+    },
+    {
+      "date": "2022-10-23",
+      "name": "(M) \u2286 \u2205",
+      "action": "/remove",
+      "params": [
+        "[Cert] L\u00f3gica 2022-10-27"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "(M) \u2286 \u2205"
+      }
+    },
+    {
+      "date": "2022-10-23",
+      "name": "(M) \u2286 \u2205",
+      "action": "/add",
+      "params": [
+        "2022-11-03",
+        "Cert",
+        "L\u00f3gica"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "(M) \u2286 \u2205"
+      }
+    },
+    {
+      "date": "2022-11-01",
+      "name": "Pepancho",
+      "action": "/add",
+      "params": [
+        "2022-11-22",
+        "Cert",
+        "Discretas"
+      ],
+      "user": {
+        "id": 1601520794,
+        "name": "Pepancho"
+      }
+    },
+    {
+      "date": "2022-11-01",
+      "name": "\ub9c8\ud2f0",
+      "action": "/add",
+      "params": [
+        "2022-12-05",
+        "Cert",
+        "C\u00e1lculo III"
+      ],
+      "user": {
+        "id": 1645550227,
+        "name": "\ub9c8\ud2f0"
+      }
+    },
+    {
+      "date": "2022-11-04",
+      "name": "\ub9c8\ud2f0",
+      "action": "/add",
+      "params": [
+        "2022-12-05",
+        "Cert",
+        "L\u00f3gica"
+      ],
+      "user": {
+        "id": 1645550227,
+        "name": "\ub9c8\ud2f0"
+      }
+    },
+    {
+      "date": "2022-11-19",
+      "name": "\ub9c8\ud2f0",
+      "action": "/add",
+      "params": [
+        "2022-11-21",
+        "Test",
+        "Programaci\u00f3n I"
+      ],
+      "user": {
+        "id": 1645550227,
+        "name": "\ub9c8\ud2f0"
+      }
+    },
+    {
+      "date": "2022-11-27",
+      "name": "\ub9c8\ud2f0",
+      "action": "/add",
+      "params": [
+        "2022-11-28",
+        "Cert",
+        "Programaci\u00f3n I"
+      ],
+      "user": {
+        "id": 1645550227,
+        "name": "\ub9c8\ud2f0"
+      }
+    },
+    {
+      "date": "2022-12-05",
+      "name": "Shir\u00f8",
+      "action": "/add",
+      "params": [
+        "2022-12-15",
+        "cert",
+        "cumple dr matias"
+      ],
+      "user": {
+        "id": 1009579186,
+        "name": "Shir\u00f8"
+      }
+    },
+    {
+      "date": "2022-12-05",
+      "name": "Shir\u00f8",
+      "action": "/add",
+      "params": [
+        "2022-12-13",
+        "cert",
+        "cumple joaco"
+      ],
+      "user": {
+        "id": 1009579186,
+        "name": "Shir\u00f8"
+      }
+    }
+  ],
   "testing": [
     {
       "date": "",
@@ -103,6 +2145,272 @@
       "user": {
         "id": 5324538848,
         "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "Carlos",
+      "action": "/remove",
+      "params": [
+        "[Tarea] Data Science 2022-06-10"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-06-10",
+        "Cert",
+        "Artificial Intelligence"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "Carlos",
+      "action": "/remove",
+      "params": [
+        "[Cert] Cryptography 2022-05-28"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-06-12",
+        "Test",
+        "Computer Vision"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "Carlos",
+      "action": "/remove",
+      "params": [
+        "[Cert] Keep moving forward!!! :') 2022-05-30"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "Carlos",
+      "action": "/remove",
+      "params": [
+        "[Test] Computer Vision 2022-06-12"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-05-24",
+        "Tarea",
+        "Quantum Mechanics"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-05-24",
+        "Tarea",
+        "Quantum Mechanics"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-05-24",
+        "Tarea",
+        "Quantum Mechanics"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-05-27",
+        "Tarea",
+        "Computer Vision"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-06-10",
+        "Cert",
+        "Holi"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-05-24",
+        "Tarea",
+        "Quantum Mechanics"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "Carlos",
+      "action": "/remove",
+      "params": [
+        "[Tarea] Quantum Mechanics 2022-05-24"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-05-25",
+        "Tarea",
+        "Quantum Mechanics"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-05-22",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-05-30",
+        "Test",
+        "Deep Learning"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-06-02",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-07-01",
+        "Test",
+        "Linear Algebra"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-06-02",
+      "name": "Carlos",
+      "action": "/remove",
+      "params": [
+        "[Test] Deep Learning 2022-05-30"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-06-26",
+      "name": "Carlos",
+      "action": "/add",
+      "params": [
+        "2022-06-27",
+        "Test",
+        "Machine Learning"
+      ],
+      "user": {
+        "id": 5324538848,
+        "name": "Carlos"
+      }
+    },
+    {
+      "date": "2022-06-26",
+      "name": "Rodrigo",
+      "action": "/add",
+      "params": [
+        "2022-02-02",
+        "almuerzo",
+        "sopaipilla"
+      ],
+      "user": {
+        "id": 949010745,
+        "name": "Rodrigo"
+      }
+    },
+    {
+      "date": "2022-06-26",
+      "name": "Rodrigo",
+      "action": "/remove",
+      "params": [
+        "[almuerzo] sopaipilla 2022-02-02"
+      ],
+      "user": {
+        "id": 949010745,
+        "name": "Rodrigo"
       }
     }
   ]
