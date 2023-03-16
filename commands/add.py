@@ -10,6 +10,7 @@ from commands.remove import cancel
 
 
 CERT_INFO, ADD_CERT = range(2)
+expert_mode = False
 new_cert = {}
 gen = None
 
@@ -25,7 +26,25 @@ async def add(update, context):
     gen = get_generation(chat_id)
 
     try:
+        # Expert mode
+        raw_args = update.message.text
+
+        required_metadata = ["Cert", "Test", "Tarea"]
+        metadata_present = [metadata in raw_args for metadata in required_metadata]
+
+        if any(metadata_present):
+            new_cert["date"] = f"{datetime.now().year}-{raw_args.split()[1]}"
+            new_cert["type"] = raw_args.split()[2]
+            new_cert["name"] = ' '.join(raw_args.split()[3:])
+            
+            global expert_mode
+            expert_mode = True
+
+            return await cert_operation(update, context)
+
+        # Normal mode
         args = update.message.text.split()[1].split('-')
+
         if (
             (len(args) != 2) or 
             not (0 < int(args[1]) <= 31) or 
@@ -104,7 +123,9 @@ async def cert_operation(update, context):
     logger = logging.getLogger("UdeCursosBot")
     logger.setLevel(logging.DEBUG)
 
-    new_cert["type"] = update.message.text
+    if (not expert_mode):
+        new_cert["type"] = update.message.text
+
     try:
         cert = {'date': new_cert['date'], 'type': new_cert['type'], 'name': new_cert['name']}
 
