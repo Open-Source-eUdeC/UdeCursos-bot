@@ -13,10 +13,11 @@ async def source(update, context):
         f"{update.message.text} -> replied at ({update.message.chat.title})"
     )
 
+    # TODO: Automate the retrieval of the version number
     await context.bot.send_message(
         chat_id=update.effective_chat.id,
         text=(
-            "*UdeCursos bot v2.0*\n\n"
+            "*UdeCursos bot v2.1*\n\n"
             f"Código fuente: [GitHub]({source_code})"
         ),
         parse_mode="Markdown"
