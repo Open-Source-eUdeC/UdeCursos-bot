@@ -26,9 +26,13 @@
 			"Mec. y Termo.",
 			"Estadísticas",
 			"Cálculo II",
+			"Cálculo III",
+			"EDO",
 			"Álgebra II"
 		],
 		"certs": [
+			{"date": "2023-04-14", "type": "Cert", "name": "Álgebra II"},
+			{"date": "2023-05-26", "type": "Cert", "name": "Álgebra II"}
 		]
 	},
 	"testing": {
@@ -45,7 +49,8 @@
 			{"date": "2023-03-27", "type": "Test", "name": "Machine Learning"},
 			{"date": "2023-03-18", "type": "Cert", "name": "Estructura de Datos"},
 			{"date": "2023-03-20", "type": "Cert", "name": "🎂 bday!"},
-			{"date": "2023-03-29", "type": "Cert", "name": "🎂 bday!"}
+			{"date": "2023-03-29", "type": "Cert", "name": "🎂 bday!"},
+			{"date": "2023-04-12", "type": "Cert", "name": "Mec. y Termo."}
 		]
 	}
 }
