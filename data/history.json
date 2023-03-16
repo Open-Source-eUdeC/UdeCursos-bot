@@ -685,6 +685,34 @@
         "id": 1332428594,
         "name": "Nodercif"
       }
+    },
+    {
+      "date": "2023-01-03",
+      "name": "\u00ac(M = (algebra))",
+      "action": "/add",
+      "params": [
+        "2023-01-13",
+        "Cert",
+        "Eval 1 plev"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "\u00ac(M = (algebra))"
+      }
+    },
+    {
+      "date": "2023-01-03",
+      "name": "\u00ac(M = (algebra))",
+      "action": "/add",
+      "params": [
+        "2023-01-24",
+        "Cert",
+        "Eval 2 plev"
+      ],
+      "user": {
+        "id": 1645427542,
+        "name": "\u00ac(M = (algebra))"
+      }
     }
   ],
   "gen2021": [

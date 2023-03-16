@@ -99,7 +99,9 @@
 			{"date": "2022-12-2", "type": "Cert", "name": "Cálculo I"},
 			{"date": "2022-11-28", "type": "Cert", "name": "Química General I"},
 			{"date": "2022-05-12", "type": "Cert", "name": "/add 12-05"},
-			{"date": "2022-12-05", "type": "Cert", "name": "Física II"}
+			{"date": "2022-12-05", "type": "Cert", "name": "Física II"},
+			{"date": "2023-01-13", "type": "Cert", "name": "Eval 1 plev"},
+			{"date": "2023-01-24", "type": "Cert", "name": "Eval 2 plev"}
 		]
 	},
 	"testing": {
@@ -122,4 +124,15 @@
 			{"date": "2022-06-27", "type": "Test", "name": "Machine Learning"}
 		]
 	}
+	"eliteGuys": {
+		"subjects": [
+			"Estructura de Datos",
+			"Estadísticas",
+			"Mat. Discretas",
+			"🎂 bday"
+		],
+		"certs": [
+			{"date": "2023-11-16", "type": "Tarea", "name": "🎂 bday"}
+		]
+	},
 }
