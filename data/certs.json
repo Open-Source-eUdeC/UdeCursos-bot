@@ -1,138 +1,51 @@
 {
 	"gen2021": {
 		"subjects": [
-			"Programación I",
-			"Lógica",
-			"EDO",
-			"Cálculo III",
+			"Estructura de Datos",
+			"Mec. y Termo.",
+			"Estadísticas",
 			"Cálculo II",
 			"Álgebra II"
 		],
 		"certs": [
-			{"date": "2022-07-11", "type": "Cert", "name": "Programación I"},
-			{"date": "2022-06-14", "type": "Cert", "name": "Cálculo II"},
-			{"date": "2022-07-08", "type": "Cert", "name": "Cálculo II"},
-			{"date": "2022-08-01", "type": "Cert", "name": "Cálculo II"},
-			{"date": "2022-06-06", "type": "Cert", "name": "Lógica"},
-			{"date": "2022-06-16", "type": "Cert", "name": "Álgebra II"},
-			{"date": "2022-06-08", "type": "Test", "name": "Álgebra II"},
-			{"date": "2022-06-14", "type": "Test", "name": "Álgebra II"},
-			{"date": "2022-06-17", "type": "Cert", "name": "Álgebra II"},
-			{"date": "2022-06-24", "type": "Tarea", "name": "Programación I"},
-			{"date": "2022-07-17", "type": "Tarea", "name": "Programación I"},
-			{"date": "2022-07-07", "type": "Cert", "name": "Cálculo III"},
-			{"date": "2022-07-05", "type": "Cert", "name": "Álgebra II"},
-			{"date": "2022-07-05", "type": "Cert", "name": "Mat discretas"},
-			{"date": "2022-07-05", "type": "Cert", "name": "EDO"},
-			{"date": "2022-07-15", "type": "Tarea", "name": "Programación I"},
-			{"date": "2022-08-03", "type": "Test", "name": "Álgebra II"},
-			{"date": "2022-07-12", "type": "Cert", "name": "Mat discretas"},
-			{"date": "2022-07-22", "type": "Cert", "name": "Programación I"},
-			{"date": "2022-07-15", "type": "Importante", "name": "Desinscribir ramos"},
-			{"date": "2022-07-20", "type": "repete", "name": "Lógica"},
-			{"date": "2022-07-21", "type": "repete", "name": "Cálculo III"},
-			{"date": "2022-10-04", "type": "Cert", "name": "Mat.Discretas"},
-			{"date": "2022-09-20", "type": "Cert", "name": "Álgebra II"},
-			{"date": "2022-10-28", "type": "Cert", "name": "Álgebra II"},
-			{"date": "2022-12-07", "type": "Cert", "name": "Álgebra II"},
-			{"date": "2022-10-7", "type": "Cert", "name": "Electromagnetismo"},
-			{"date": "2022-09-27", "type": "Cert", "name": "EDO"},
-			{"date": "2022-12-07", "type": "Cert", "name": "EDO"},
-			{"date": "2022-09-12", "type": "Cert", "name": "Cálculo II"},
-			{"date": "2022-10-24", "type": "Cert", "name": "Cálculo II"},
-			{"date": "2022-12-02", "type": "Cert", "name": "Cálculo II"},
-			{"date": "2022-9-27", "type": "Cert", "name": "Numérico"},
-			{"date": "2022-11-4", "type": "Cert", "name": "Electromagnetismo"},
-			{"date": "2022-12-2", "type": "Cert", "name": "Electromagnetismo"},
-			{"date": "2022-12-7", "type": "Cert", "name": "Numérico"},
-			{"date": "2022-10-06", "type": "Cert", "name": "Cálculo III"},
-			{"date": "2022-09-15", "type": "Cert", "name": "Lógica"},
-			{"date": "2022-09-22", "type": "Cert", "name": "Lógica"},
-			{"date": "2022-10-03", "type": "Cert", "name": "Programación I"},
-			{"date": "2022-09-09", "type": "Tarea", "name": "Programación II"},
-			{"date": "2022-10-09", "type": "Tarea", "name": "Programación II"},
-			{"date": "2022-10-27", "type": "Tarea", "name": "Programación II"},
-			{"date": "2022-10-30", "type": "Test", "name": "Programación II"},
-			{"date": "2022-11-03", "type": "Cert", "name": "Lógica"},
-			{"date": "2022-11-22", "type": "Cert", "name": "Discretas"},
-			{"date": "2022-12-05", "type": "Cert", "name": "Cálculo III"},
-			{"date": "2022-12-05", "type": "Cert", "name": "Lógica"},
-			{"date": "2022-11-21", "type": "Test", "name": "Programación I"},
-			{"date": "2022-11-28", "type": "Cert", "name": "Programación I"},
-			{"date": "2022-12-15", "type": "cert", "name": "cumple dr matias"},
-			{"date": "2022-12-13", "type": "cert", "name": "cumple joaco"}
 		]
 	},
 	"gen2022": {
 		"subjects": [
-			"Cálculo I",
-			"Álgebra I",
-			"Física I",
-			"Química General I"
+			"Programación I",
+			"Lógica",
+			"Cálculo II",
+			"Álgebra II"
 		],
 		"certs": [
-			{"date": "2022-06-25", "type": "Test", "name": "Cálculo I"},
-			{"date": "2022-06-14", "type": "Cert", "name": "Cálculo I"},
-			{"date": "2022-06-17", "type": "Cert", "name": "Álgebra I"},
-			{"date": "2022-06-20", "type": "Cert", "name": "Física I"},
-			{"date": "2022-06-10", "type": "Test", "name": "Química General I"},
-			{"date": "2022-06-10", "type": "Test", "name": "Álgebra I"},
-			{"date": "2022-07-01", "type": "Test", "name": "Química General I"},
-			{"date": "2022-08-03", "type": "Repete", "name": "Álgebra I"},
-			{"date": "2022-07-12", "type": "Cert", "name": "Química General I"},
-			{"date": "2022-08-01", "type": "Repete", "name": "Cálculo I"},
-			{"date": "2022-07-22", "type": "Repete", "name": "Química General I"},
-			{"date": "2022-07-08", "type": "Cert", "name": "Cálculo I"},
-			{"date": "2022-07-05", "type": "Cert", "name": "Álgebra I"},
-			{"date": "2022-07-15", "type": "Cert", "name": "Física I"},
-			{"date": "2022-09-20", "type": "Cert", "name": "Álgebra 2"},
-			{"date": "2022-09-20", "type": "Cert", "name": "Álgebra I"},
-			{"date": "2022-10-28", "type": "Cert", "name": "Álgebra I"},
-			{"date": "2022-12-07", "type": "Cert", "name": "Álgebra I"},
-			{"date": "2022-09-12", "type": "Cert", "name": "Cálculo I"},
-			{"date": "2022-09-14", "type": "Cert", "name": "Física II"},
-			{"date": "2022-10-24", "type": "Cert", "name": "Cálculo I"},
-			{"date": "2022-10-26", "type": "Cert", "name": "Física II"},
-			{"date": "2022-10-28", "type": "Cert", "name": "Álgebra II"},
-			{"date": "2022-10-03", "type": "Cert", "name": "Química General I"},
-			{"date": "2022-10-5", "type": "Test", "name": "Física II"},
-			{"date": "2022-12-2", "type": "Cert", "name": "Cálculo I"},
-			{"date": "2022-11-28", "type": "Cert", "name": "Química General I"},
-			{"date": "2022-05-12", "type": "Cert", "name": "/add 12-05"},
-			{"date": "2022-12-05", "type": "Cert", "name": "Física II"},
-			{"date": "2023-01-13", "type": "Cert", "name": "Eval 1 plev"},
-			{"date": "2023-01-24", "type": "Cert", "name": "Eval 2 plev"}
+		]
+	},
+	"eliteGuys": {
+		"subjects": [
+			"Estructura de Datos",
+			"Mec. y Termo.",
+			"Estadísticas",
+			"Cálculo II",
+			"Álgebra II"
+		],
+		"certs": [
 		]
 	},
 	"testing": {
 		"subjects": [
-			"Linear Algebra",
-			"Quantum Mechanics",
-			"Deep Learning",
-			"Computer Vision",
-			"Machine Learning",
-			"Data Science",
-			"Artificial Intelligence",
-			"Cryptography",
-			"Quantum Computing"
+			"Estructura de Datos",
+			"Mec. y Termo.",
+			"Estadísticas",
+			"Cálculo II",
+			"Álgebra II",
+			"🎂 bday!"
 		],
 		"certs": [
-			{"date": "2022-05-30", "type": "Test", "name": "Quantum Computing"},
-			{"date": "2022-06-10", "type": "Cert", "name": "Artificial Intelligence"},
-			{"date": "2022-05-25", "type": "Tarea", "name": "Quantum Mechanics"},
-			{"date": "2022-07-01", "type": "Test", "name": "Linear Algebra"},
-			{"date": "2022-06-27", "type": "Test", "name": "Machine Learning"}
+			{"date": "2023-03-19", "type": "Test", "name": "Linear Algebra"},
+			{"date": "2023-03-27", "type": "Test", "name": "Machine Learning"},
+			{"date": "2023-03-18", "type": "Cert", "name": "Estructura de Datos"},
+			{"date": "2023-03-20", "type": "Cert", "name": "🎂 bday!"},
+			{"date": "2023-03-29", "type": "Cert", "name": "🎂 bday!"}
 		]
 	}
-	"eliteGuys": {
-		"subjects": [
-			"Estructura de Datos",
-			"Estadísticas",
-			"Mat. Discretas",
-			"🎂 bday"
-		],
-		"certs": [
-			{"date": "2023-11-16", "type": "Tarea", "name": "🎂 bday"}
-		]
-	},
 }
