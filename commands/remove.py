@@ -1,3 +1,4 @@
+import logging
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove
 from telegram.ext import ConversationHandler
 #
@@ -10,6 +11,13 @@ chosen_cert = None
 gen = None
 
 async def remove(update, context):
+  logger = logging.getLogger("UdeCursosBot")
+  logger.setLevel(logging.DEBUG)
+
+  logger.info(
+      f"{update.message.text} <- User @{update.effective_user.username} ({update.effective_user.first_name}) requested"
+  )
+
   chat_id = update.message.chat_id
   global gen
   gen = get_generation(chat_id)
@@ -71,9 +79,15 @@ async def remove_confirm(update, context):
     
 
 async def remove_cert(update, context):
+  logger = logging.getLogger("UdeCursosBot")
+  logger.setLevel(logging.DEBUG)
   response = update.message.text
   
   if response == '👍':
+    logger.info(
+      f"{update.message.text} -> removed {chosen_cert} at ({update.message.chat.title})"
+    )
+
     try:
       cert_remover(chosen_cert, gen)
       usr_id = update.message.from_user.id
@@ -100,6 +114,10 @@ async def remove_cert(update, context):
     ); return ConversationHandler.END
 
   elif response == '❌':
+    logger.info(
+      f"{update.message.text} -> canceled removal of {chosen_cert} at ({update.message.chat.title})"
+    )
+
     await update.message.reply_text(
         """
         *⚠️ La operación ha sido cancelada.*

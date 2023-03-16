@@ -17,12 +17,27 @@ from commands.juna import juna
 from commands.remove import *
 from commands.add import *
 
+logger = logging.getLogger("UdeCursosBot")
+logger.setLevel(logging.DEBUG)
+
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.DEBUG)
+
+formatter = logging.Formatter('%(asctime)s - (%(name)s) - [%(levelname)s] -- %(message)s')
+console_handler.setFormatter(formatter)
+
+logger.addHandler(console_handler)
+
 logging.basicConfig(
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    level=logging.INFO
+    filename="logs/console.log", 
+    format="%(asctime)s - (%(name)s) - [%(levelname)s] -- %(message)s",
+    datefmt='%m/%d/%Y %I:%M:%S %p',
 )
 
 async def start(update: Update, context: CallbackContext):
+    logger.info(
+        f"{update.message.text} <- User @{update.effective_user.username} ({update.effective_user.first_name}) started the bot"
+    )
     await context.bot.send_message(
         chat_id=update.effective_chat.id,
         text=(
@@ -36,12 +51,14 @@ async def start(update: Update, context: CallbackContext):
 
 
 if __name__ == "__main__":
+    logger.info("Starting bot...")
     bot = (
         ApplicationBuilder()
         .token(fetch_token())
         .build()
     )
 
+    logger.info("Adding handlers...")
     bot.add_handler(CommandHandler("start", start))
     bot.add_handler(CommandHandler("source", source))
     bot.add_handler(CommandHandler("myid", getID))
@@ -70,4 +87,5 @@ if __name__ == "__main__":
     bot.add_handler(add_conv)
     bot.add_handler(remove_conv)
 
+    logger.info("Starting polling...")
     bot.run_polling()

@@ -1,3 +1,4 @@
+import logging
 from datetime import datetime
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove
 from telegram.ext import ConversationHandler
@@ -13,6 +14,12 @@ new_cert = {}
 gen = None
 
 async def add(update, context):
+    logger = logging.getLogger("UdeCursosBot")
+    logger.setLevel(logging.DEBUG)
+    logger.info(
+        f"{update.message.text} <- User @{update.effective_user.username} ({update.effective_user.first_name}) requested"
+    )
+
     chat_id = update.message.chat_id
     global gen
     gen = get_generation(chat_id)
@@ -94,6 +101,9 @@ async def cert_info(update, context):
     ); return ADD_CERT
 
 async def cert_operation(update, context):
+    logger = logging.getLogger("UdeCursosBot")
+    logger.setLevel(logging.DEBUG)
+
     new_cert["type"] = update.message.text
     try:
         cert = {'date': new_cert['date'], 'type': new_cert['type'], 'name': new_cert['name']}
@@ -122,6 +132,9 @@ async def cert_operation(update, context):
           parse_mode='Markdown'
       ); return ConversationHandler.END 
 
+    logger.info(
+        f"{update.message.text} -> Added {new_cert['name']} {new_cert['type']} {new_cert['date']} at ({update.message.chat.title})"
+    )
     await update.message.reply_text(
         f"""
         *🎉 ¡La fecha de evaluación ha sido agregada!.*

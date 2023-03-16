@@ -1,3 +1,4 @@
+import logging
 import json
 #
 from components.fetch import get_generation
@@ -5,6 +6,12 @@ from components.certs import getRemainingDays
 
 
 async def certs(update, context):
+    logger = logging.getLogger("UdeCursosBot")
+    logger.setLevel(logging.DEBUG)
+    logger.info(
+        f"{update.message.text} <- User @{update.effective_user.username} ({update.effective_user.first_name}) requested"
+    )
+
     with open('data/certs.json') as file:
         data = json.load(file)
 
@@ -20,7 +27,7 @@ async def certs(update, context):
             await update.message.reply_text(alertMsg, parse_mode='Markdown')
             return
     except IndexError:
-        print('[ ! ] No arguments were given')
+        # print('[ ! ] No arguments were given')
         pass
 
     try:
@@ -42,7 +49,7 @@ async def certs(update, context):
             await update.message.reply_text(alertMsg, parse_mode='Markdown')
             return
     except IndexError:
-        print('[ ! ] No arguments were given')
+        # print('[ ! ] No arguments were given')
         ramosRaw = []
     
     ramos = []
@@ -100,7 +107,7 @@ async def certs(update, context):
 
 
     body = f"""
-    ✳️ *Próximas Evaluaciones* ✳️
+    ✳️ *Fechas Relevantes* ✳️
 ~ Rango: {rango} días
 
 """
@@ -122,5 +129,9 @@ async def certs(update, context):
             assignedStatus = status[4]
 
         body += f"• {assignedStatus} _{subject}_\n"
+
+    logger.info(
+        f"{update.message.text} -> replied to gen [{gen}] at ({update.message.chat.title})"
+    )
 
     await update.message.reply_text(body, parse_mode='Markdown')
